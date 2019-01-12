@@ -99,6 +99,66 @@
         
           <section id="main">
   
+    <article id="post-Setting-SSH-Key" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2019/01/13/Setting-SSH-Key/">Setting SSH Key</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/01/13/Setting-SSH-Key/" class="article-date">
+	  <time datetime="2019-01-12T18:31:24.000Z" itemprop="datePublished">一月 13, 2019</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>###设置SSH Key</p>
+<ol>
+<li>打开<strong>GitBash</strong></li>
+<li>输入<code>cd ~/.ssh</code>（看你是否有了ssh key 密钥，有了就备份）</li>
+<li>输入<code>ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code> 多次回车确认<ul>
+<li>确认秘钥的保存路径（如果不需要改路径则直接回车）</li>
+<li>如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆盖）</li>
+<li>创建密码（如果不需要密码则直接回车）</li>
+<li>确认密码</li>
+</ul>
+</li>
+<li>跟着上面所指示的路径（C:\Users\用户名\.ssh）中找到该文件，<code>id_rsa</code>文件即是你的私有密钥，<code>id_rsa.pub</code>是共开密钥</li>
+<li>打开你的<code>id_rsa.pub</code>文件，复制下里面的内容，然后登录进去你的Git仓库</li>
+<li>测试一下链接是否正常了，接着输入<ul>
+<li><code>ssh -T git@github.com</code>（GitHub）</li>
+<li><code>ssh -T git@git.coding.NET</code>（Coding）</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-MarkdownPad" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -393,6 +453,18 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
+              <h6 style="margin: 0;"><a href="/2019/01/13/Setting-SSH-Key/">Setting SSH Key</a></h6>
+              <span>一月 13, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
               <h6 style="margin: 0;"><a href="/2019/01/13/MarkdownPad/">MarkdownPad</a></h6>
               <span>一月 13, 2019</span>
             </div>
@@ -453,7 +525,7 @@
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
