@@ -9,17 +9,17 @@
   
   
   
-  <meta name="description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认 确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆">
+  <meta name="description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认  确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Setting SSH Key">
 <meta property="og:url" content="http://yoursite.com/2019/01/13/Setting-SSH-Key/index.html">
 <meta property="og:site_name" content="Lvoicc">
-<meta property="og:description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认 确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆">
+<meta property="og:description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认  确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-01-12T19:49:20.526Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Setting SSH Key">
-<meta name="twitter:description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认 确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆">
+<meta name="twitter:description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认  确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再">
   
     <link rel="alternate" href="/atom.xml" title="Lvoicc" type="application/atom+xml">
   
@@ -160,7 +160,8 @@
 <ol>
 <li>打开<strong>GitBash</strong></li>
 <li>输入<code>cd ~/.ssh</code>（看你是否有了ssh key 密钥，有了就备份）</li>
-<li>输入<code>ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code> 多次回车确认<ul>
+<li>输入<code>ssh-keygen -t rsa -C &quot;你的邮箱地址&quot;</code> 多次回车确认
+<ul>
 <li>确认秘钥的保存路径（如果不需要改路径则直接回车）</li>
 <li>如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆盖）</li>
 <li>创建密码（如果不需要密码则直接回车）</li>
@@ -169,7 +170,8 @@
 </li>
 <li>跟着上面所指示的路径（C:\Users\用户名\.ssh）中找到该文件，<code>id_rsa</code>文件即是你的私有密钥，<code>id_rsa.pub</code>是共开密钥</li>
 <li>打开你的<code>id_rsa.pub</code>文件，复制下里面的内容，然后登录进去你的Git仓库</li>
-<li>测试一下链接是否正常了，接着输入<ul>
+<li>测试一下链接是否正常了，接着输入
+<ul>
 <li><code>ssh -T git@github.com</code>（GitHub）</li>
 <li><code>ssh -T git@git.coding.NET</code>（Coding）</li>
 <li><code>ssh -T git@git.dev.tencent.com</code>（Tencent Cloud）</li>
