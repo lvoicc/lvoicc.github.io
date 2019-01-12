@@ -3,24 +3,24 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Page 1 | Lvoicc  //博客名字</title>
+  <title>第 1 页 | Lvoicc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
   
   
-  <meta name="description" content="//博客描述">
+  <meta name="description" content="学海无涯">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Lvoicc  &#x2F;&#x2F;博客名字">
-<meta property="og:url" content="http://yoursite.com       //自己购买的域名网址（没有可不写）/index.html">
-<meta property="og:site_name" content="Lvoicc  &#x2F;&#x2F;博客名字">
-<meta property="og:description" content="//博客描述">
-<meta property="og:locale" content="zh-CN       //语言（此处为简体中文）">
+<meta property="og:title" content="Lvoicc">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Lvoicc">
+<meta property="og:description" content="学海无涯">
+<meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lvoicc  &#x2F;&#x2F;博客名字">
-<meta name="twitter:description" content="//博客描述">
+<meta name="twitter:title" content="Lvoicc">
+<meta name="twitter:description" content="学海无涯">
   
-    <link rel="alternate" href="/atom.xml" title="Lvoicc  //博客名字" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Lvoicc" type="application/atom+xml">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -55,9 +55,31 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
 
 
-<header id="allheader" class="site-header" role="banner">
+
+
+<header id="allheader" class="site-header" role="banner" style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);">
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -70,7 +92,7 @@
           </h1>
           
           
-            <div class="site-description">//博客描述</div>
+            <div class="site-description">学海无涯</div>
           
             
           <nav id="main-navigation" class="main-navigation" role="navigation">
@@ -80,15 +102,15 @@
             <div class="clearfix sf-menu">
               <ul id="main-nav" class="menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分类</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">标签</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
                     
               </ul>
             </div>
@@ -123,7 +145,7 @@
     <div class="article-meta">
       
 	<a href="/2019/01/13/Setting-SSH-Key/" class="article-date">
-	  <time datetime="2019-01-12T18:31:24.000Z" itemprop="datePublished">January 13, 2019</time>
+	  <time datetime="2019-01-12T18:31:24.000Z" itemprop="datePublished">一月 13, 2019</time>
 	</a>
 
        
@@ -167,6 +189,59 @@
 <!-- Table of Contents -->
 
   
+    <article id="post-MarkdownPad" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2019/01/13/MarkdownPad/">MarkdownPad</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2019/01/13/MarkdownPad/" class="article-date">
+	  <time datetime="2019-01-12T17:45:48.000Z" itemprop="datePublished">一月 13, 2019</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>MarkdownPad下载地址</p>
+<p><a href="https://markdownpad.com/" target="_blank" rel="noopener">官方网站</a></p>
+<p>下载安装即可</p>
+<h4 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h4><p>WIN10安装报错，显示</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HTML 渲染错误</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">HTML渲染组件出错。这个问题可以通过安装某个确实组件来解决。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">您是否想要了解详情信息？</span><br></pre></td></tr></table></figure>
+<p>安装组件<br><a href="http://markdownpad.com/download/awesomium_v1.6.6_sdk_win.exe" target="_blank" rel="noopener">Awesomium 1.6.6 SDK</a><br>即可解决</p>
+<p>More info:<a href="https://markdownpad.com/faq.html" target="_blank" rel="noopener">FAQ</a></p>
+<p>####MarkdownPad2.5 注册码</p>
+<p><strong>邮箱：</strong><a href="mailto:Soar360@live.com" target="_blank" rel="noopener">Soar360@live.com</a></p>
+<p><strong>授权密钥：</strong><br>GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
     <article id="post-第一篇博客" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
@@ -184,7 +259,7 @@
     <div class="article-meta">
       
 	<a href="/2019/01/12/第一篇博客/" class="article-date">
-	  <time datetime="2019-01-11T22:35:47.000Z" itemprop="datePublished">January 12, 2019</time>
+	  <time datetime="2019-01-11T22:35:47.000Z" itemprop="datePublished">一月 12, 2019</time>
 	</a>
 
        
@@ -208,7 +283,7 @@
 <!-- Table of Contents -->
 
   
-    <article id="post-The-first-blog" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-TEST" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
@@ -216,7 +291,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2019/01/12/The-first-blog/">Hello World</a>
+      <a class="article-title" href="/2019/01/12/TEST/">TEST</a>
     </h1>
   
 
@@ -224,8 +299,8 @@
     
     <div class="article-meta">
       
-	<a href="/2019/01/12/The-first-blog/" class="article-date">
-	  <time datetime="2019-01-11T22:30:56.664Z" itemprop="datePublished">January 12, 2019</time>
+	<a href="/2019/01/12/TEST/" class="article-date">
+	  <time datetime="2019-01-11T22:35:47.000Z" itemprop="datePublished">一月 12, 2019</time>
 	</a>
 
        
@@ -233,61 +308,7 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<hr>
-<p>title: The first blog<br>date: 2019-01-12 06:30:56</p>
-<h2 id="tags"><a href="#tags" class="headerlink" title="tags:"></a>tags:</h2>
-      
-    </div>
-    <footer class="entry-meta entry-footer">
-      
-      
-      
-    </footer>
-    <hr class="entry-footer-hr">
-  </div>
-  
-</article>
-
-<!-- Table of Contents -->
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-    
-    
-      <header class="article-header">
         
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2019/01/12/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-meta">
-      
-	<a href="/2019/01/12/hello-world/" class="article-date">
-	  <time datetime="2019-01-11T21:39:34.904Z" itemprop="datePublished">January 12, 2019</time>
-	</a>
-
-       
-      
-    </div>
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -314,15 +335,15 @@
     <form class="search-form">
         <label style="width: 72%;">
             <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" Search…" value="" name="s" title="Search for:">
+            <input type="search" class="search-field" style="height: 36px; width: 100%;" placeholder=" 搜索…" value="" name="s" title="Search for:">
         </label>
-        <input type="submit" class="search-form-submit" value="Search">
+        <input type="submit" class="search-form-submit" value="搜索">
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something...">
+            <input type="text" class="ins-search-input" placeholder="请输入关键词...">
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -334,11 +355,11 @@
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(无标题)',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -353,7 +374,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Connect With Us</h3>
+    <h3 class="widget-title">联系我们</h3>
     <div class="widget widget_athemes_social_icons">
 
     	<ul class="clearfix widget-social-icons">   
@@ -397,7 +418,7 @@
     
   <div class="widget_athemes_tabs">
     <ul id="widget-tab" class="clearfix widget-tab-nav">
-      <li class="active"><a>Recent Posts</a></li>
+      <li class="active"><a>最新文章</a></li>
     </ul>
     <div class="widget">
       <ul>
@@ -409,7 +430,19 @@
             
 
               <h6 style="margin: 0;"><a href="/2019/01/13/Setting-SSH-Key/">Setting SSH Key</a></h6>
-              <span>January 13, 2019</span>
+              <span>一月 13, 2019</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2019/01/13/MarkdownPad/">MarkdownPad</a></h6>
+              <span>一月 13, 2019</span>
             </div>
 
           </li>
@@ -421,7 +454,7 @@
             
 
               <h6 style="margin: 0;"><a href="/2019/01/12/第一篇博客/">第一篇博客</a></h6>
-              <span>January 12, 2019</span>
+              <span>一月 12, 2019</span>
             </div>
 
           </li>
@@ -432,20 +465,8 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2019/01/12/The-first-blog/">Hello World</a></h6>
-              <span>January 12, 2019</span>
-            </div>
-
-          </li>
-        
-          <li class="clearfix">
-
-            
-              <div class="widget-entry-summary" style="margin: 0;">
-            
-
-              <h6 style="margin: 0;"><a href="/2019/01/12/hello-world/">Hello World</a></h6>
-              <span>January 12, 2019</span>
+              <h6 style="margin: 0;"><a href="/2019/01/12/TEST/">TEST</a></h6>
+              <span>一月 12, 2019</span>
             </div>
 
           </li>
@@ -465,10 +486,10 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
+    <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">January 2019</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -497,7 +518,7 @@
 
   <div class="clearfix container">
       <div class="site-info">
-	      &copy; 2019 Lvoicc  //博客名字 All Rights Reserved.
+	      &copy; 2019 Lvoicc All Rights Reserved.
         
             <span id="busuanzi_container_site_uv">
               本站访客数<span id="busuanzi_value_site_uv"></span>人次  
@@ -523,6 +544,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>

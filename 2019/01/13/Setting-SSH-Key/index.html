@@ -3,7 +3,7 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>Setting SSH Key | Lvoicc  //博客名字</title>
+  <title>Setting SSH Key | Lvoicc</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -12,16 +12,16 @@
   <meta name="description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认 确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Setting SSH Key">
-<meta property="og:url" content="http://yoursite.com       //自己购买的域名网址（没有可不写）/2019/01/13/Setting-SSH-Key/index.html">
-<meta property="og:site_name" content="Lvoicc  &#x2F;&#x2F;博客名字">
+<meta property="og:url" content="http://yoursite.com/2019/01/13/Setting-SSH-Key/index.html">
+<meta property="og:site_name" content="Lvoicc">
 <meta property="og:description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认 确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆">
-<meta property="og:locale" content="zh-CN       //语言（此处为简体中文）">
+<meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-01-12T19:49:20.526Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Setting SSH Key">
 <meta name="twitter:description" content="###设置SSH Key  打开GitBash 输入cd ~/.ssh（看你是否有了ssh key 密钥，有了就备份） 输入ssh-keygen -t rsa -C &amp;quot;你的邮箱地址&amp;quot; 多次回车确认 确认秘钥的保存路径（如果不需要改路径则直接回车） 如果上一步置顶的保存路径下已经有秘钥文件，则需要确认是否覆盖（如果之前的秘钥不再需要则直接回车覆盖，如需要则手动拷贝到其他目录后再覆">
   
-    <link rel="alternate" href="/atom.xml" title="Lvoicc  //博客名字" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Lvoicc" type="application/atom+xml">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -56,9 +56,31 @@
 
 
   
+  
+  <div class="site-header-image">
+    <img id="originBg" width="100%" alt="Hike News" src="">
+  </div>
+
+  <div id="header-blur" class="site-header-image blur" style="position: absolute; top:0; height: 207px; min-height: 207px; min-width: 100%;">
+    <img id="blurBg" width="100%" style="top: 96%" alt="Hike News" src="">
+  </div>
+
+  <script>
+        var imgUrls = "css/images/pose01.jpg,https://source.unsplash.com/collection/954550/1920x1080,https://source.unsplash.com/collection/954550/1920x1081".split(",");
+        var random = Math.floor((Math.random() * imgUrls.length ));
+        if (imgUrls[random].startsWith('http') || imgUrls[random].indexOf('://') >= 0) {
+          document.getElementById("originBg").src=imgUrls[random];
+          document.getElementById("blurBg").src=imgUrls[random];
+        } else {
+          document.getElementById("originBg").src='/' + imgUrls[random];
+          document.getElementById("blurBg").src='/' + imgUrls[random];
+        }
+    </script>
 
 
-<header id="allheader" class="site-header" role="banner">
+
+
+<header id="allheader" class="site-header" role="banner" style="width: 100%; position: absolute; top:0; background: rgba(255,255,255,.8);">
   <div class="clearfix container">
       <div class="site-branding">
 
@@ -71,7 +93,7 @@
           </h1>
           
           
-            <div class="site-description">//博客描述</div>
+            <div class="site-description">学海无涯</div>
           
             
           <nav id="main-navigation" class="main-navigation" role="navigation">
@@ -81,15 +103,15 @@
             <div class="clearfix sf-menu">
               <ul id="main-nav" class="menu sf-js-enabled sf-arrows" style="touch-action: pan-y;">
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">Home</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/">首页</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">Archives</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/archives">归档</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">Categories</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/categories">分类</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">Tags</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/tags">标签</a> </li>
                     
-                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">About</a> </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1663"> <a class="" href="/about">关于</a> </li>
                     
               </ul>
             </div>
@@ -122,7 +144,7 @@
     <div class="article-meta">
       
 	<a href="/2019/01/13/Setting-SSH-Key/" class="article-date">
-	  <time datetime="2019-01-12T18:31:24.000Z" itemprop="datePublished">January 13, 2019</time>
+	  <time datetime="2019-01-12T18:31:24.000Z" itemprop="datePublished">一月 13, 2019</time>
 	</a>
 
        
@@ -194,9 +216,9 @@
 <nav id="article-nav">
   
   
-    <a href="/2019/01/12/第一篇博客/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">第一篇博客</div>
+    <a href="/2019/01/13/MarkdownPad/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">MarkdownPad</div>
     </a>
   
 </nav>
@@ -208,9 +230,9 @@
 
   <aside id="sidebar">
     <div id="toc" class="toc-article">
-    <strong class="toc-title">Contents</strong>
+    <strong class="toc-title">文章目录</strong>
     
-      <ol class="nav">None</ol>
+      <ol class="nav">无</ol>
     
     </div>
   </aside>
@@ -237,7 +259,7 @@
 
   <div class="clearfix container">
       <div class="site-info">
-	      &copy; 2019 Lvoicc  //博客名字 All Rights Reserved.
+	      &copy; 2019 Lvoicc All Rights Reserved.
         
             <span id="busuanzi_container_site_uv">
               本站访客数<span id="busuanzi_value_site_uv"></span>人次  
@@ -263,6 +285,9 @@
 
 
     <!-- headerblur min height -->
+    
+      var headerblur = document.getElementById("header-blur");
+      headerblur.style.minHeight = window.getComputedStyle(document.getElementById("allheader"), null).height;
     
     
 </script>
