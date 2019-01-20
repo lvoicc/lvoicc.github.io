@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Date:2018-10-01  ¶Intro Plunge into learning with our latest bundle, courtesy of O’Reilly! Get titles like Head First SQL, Head First JavaScript Programming, and Head First Design Patterns. Plus, your">
+<meta name="keywords" content="HumbleBundle,Book">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Head First Series by O&#39;Reilly">
+<meta property="og:url" content="http://yoursite.com/2019/01/21/Head-First-Series-by-O-Reilly/index.html">
+<meta property="og:site_name" content="Lvoicc">
+<meta property="og:description" content="Date:2018-10-01  ¶Intro Plunge into learning with our latest bundle, courtesy of O’Reilly! Get titles like Head First SQL, Head First JavaScript Programming, and Head First Design Patterns. Plus, your">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://hb.imgix.net/e1659d2e6c257fc188dab8774cc5aa95374ace12.png?auto=format&s=6315e5ba51a7e9fc88f5fc2cadfa7ed3">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/29758364aa948f5594224f78c66a7cde96002462.png?auto=format&fit=crop&h=218&w=150&s=72ff894cf8cce4c9b5de31ca17629a3e">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/ad4e671e2a2348a80e1a7d57c1226392ca625c5b.png?auto=format&fit=crop&h=218&w=150&s=fd231ac95a5d2de5bc3f7ae72c7e776d">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/02aeeaef54f2c41102dda56c8342bef9d7fa25d0.png?auto=format&fit=crop&h=218&w=150&s=a007caee91434eee2a5d28d182ad9d15">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/a775303a7c8318f392ed305e7d05bc43957b9d3a.png?auto=format&fit=crop&h=218&w=150&s=39f3f2457d2093c1aa743b3ca3df3cb1">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/1025014f57a6e7c81a03f3b302eebab1b9bdc417.png?auto=format&fit=crop&h=218&w=150&s=dd66fea5cbdfdf270b2127098eed935c">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/bc6bfba799bfee2726e2df835ed825a2cf982183.png?auto=format&fit=crop&h=218&w=150&s=812766723c3f7529413c39e7bbeb995a">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/cba6182d0eb4edf2491b4d47ad99754375797af5.png?auto=format&fit=crop&h=218&w=150&s=0f85a7082e1016e504814ccb7578a692">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/4b4515e9d0a9985eb3be9bf17699747e1fd0b278.png?auto=format&fit=crop&h=218&w=150&s=586f169c44a24ae29e31bc5b382cec27">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/3ac27be07d56dee00d5dbc36fe58c2c8a57fb5a3.png?auto=format&fit=crop&h=218&w=150&s=7862feae584272a81228cbda9c263aaf">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/bd9b383faa3a0f386340090f6ef2601e08fefc09.png?auto=format&fit=crop&h=218&w=150&s=32f861c40b33140d55fa3fc034149cbd">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/3bacc10a4a2bd53a8e0be92c1dc199ee8b639a85.png?auto=format&fit=crop&h=218&w=150&s=a49b5828f6464f8aab3f7b901550c412">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/996603b981bb3b832bcf3d1473c374ec44f86f41.png?auto=format&fit=crop&h=218&w=150&s=a974998bcd9a5cac0365b9536d07b02c">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/60a9b1d4845a48e3d9e703aeb4e96986cd595995.png?auto=format&fit=crop&h=218&w=150&s=51d1d4b04c20ecb31ddb708a28a5a1ff">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/c9805ca59ef58b3e3781e45fc321e93b34ce3383.png?auto=format&fit=crop&h=218&w=150&s=daee4baa8cea3fa007d78e8ff30096c5">
+<meta property="og:image" content="https://humblebundle.imgix.net/misc/files/hashed/cd180fc4b1e03338a3ea46edb894f055b1ff7255.png?auto=format&fit=crop&h=218&w=150&s=3a414cdfeaa1a8d96defebc78d07d155">
+<meta property="og:updated_time" content="2019-01-20T18:16:09.131Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Head First Series by O&#39;Reilly">
+<meta name="twitter:description" content="Date:2018-10-01  ¶Intro Plunge into learning with our latest bundle, courtesy of O’Reilly! Get titles like Head First SQL, Head First JavaScript Programming, and Head First Design Patterns. Plus, your">
+<meta name="twitter:image" content="https://hb.imgix.net/e1659d2e6c257fc188dab8774cc5aa95374ace12.png?auto=format&s=6315e5ba51a7e9fc88f5fc2cadfa7ed3">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/01/21/Head-First-Series-by-O-Reilly/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Head First Series by O'Reilly | Lvoicc</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lvoicc</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学海无涯</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/21/Head-First-Series-by-O-Reilly/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lvoicc">
+      <meta itemprop="description" content="Lvoicc's Blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lvoicc">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Head First Series by O'Reilly
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-21 02:06:43 / 修改时间：02:16:09" itemprop="dateCreated datePublished" datetime="2019-01-21T02:06:43+08:00">2019-01-21</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Humble-Book-Bundle/" itemprop="url" rel="index"><span itemprop="name">Humble Book Bundle</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <a href="/2019/01/21/Head-First-Series-by-O-Reilly/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/21/Head-First-Series-by-O-Reilly/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><code>Date:2018-10-01</code></p>
+<p><img src="https://hb.imgix.net/e1659d2e6c257fc188dab8774cc5aa95374ace12.png?auto=format&amp;s=6315e5ba51a7e9fc88f5fc2cadfa7ed3" alt=""></p>
+<h3 id="intro"><a class="header-anchor" href="#intro">¶</a>Intro</h3>
+<p>Plunge into learning with our latest bundle, courtesy of O’Reilly! Get titles like Head First SQL, Head First JavaScript Programming, and Head First Design Patterns. Plus, your purchase will support Code for America!</p>
+<table>
+<thead>
+<tr>
+<th>$1+</th>
+<th>$8+</th>
+<th>$15+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a01">Head First Ruby</a></td>
+<td><a href="#b01">Head First JavaScript Programming</a></td>
+<td><a href="#c01">Head First Design Patterns</a></td>
+</tr>
+<tr>
+<td><a href="#a02">Head First C</a></td>
+<td><a href="#b02">Head First PMP</a></td>
+<td><a href="#c02">Head First Java (Second Edition)</a></td>
+</tr>
+<tr>
+<td><a href="#a03">Head First Object-Oriented Analysis and Design</a></td>
+<td><a href="#b03">Head First HTML and CSS (Second Edition)</a></td>
+<td><a href="#c03">Head First Python (Second Edition)</a></td>
+</tr>
+<tr>
+<td><a href="#a04">Head First SQL</a></td>
+<td><a href="#b04">Head First C# (Third Edition)</a></td>
+<td><a href="#c04">Head First Learn to Code</a></td>
+</tr>
+<tr>
+<td><a href="#a05">Head First Statistics</a></td>
+<td><a href="#b05">Head First Agile</a></td>
+<td><a href="#c05">Head First Android Development (Second Edition)</a></td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<hr>
+<h3 id="1"><a class="header-anchor" href="#1">¶</a>1$+</h3>
+<blockquote>
+<h4 id="span-id-a01-head-first-ruby"><a class="header-anchor" href="#span-id-a01-head-first-ruby">¶</a><span id="a01">Head First Ruby</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/29758364aa948f5594224f78c66a7cde96002462.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=72ff894cf8cce4c9b5de31ca17629a3e" alt=""></p>
+<p><strong>What will you learn from this book?</strong></p>
+<p>What’s all the buzz about this Ruby language? Is it right for you? Well, ask yourself: are you tired of all those extra declarations, keywords, and compilation steps in your other language? Do you want to be a more productive programmer? Then you’ll love Ruby. With this unique hands-on learning experience, you’ll discover how Ruby takes care of all the details for you, so you can simply have fun and get more done with less code.</p>
+<p><strong>Why does this book look so different?</strong></p>
+<p>Based on the latest research in cognitive science and learning theory, <em>Head First Ruby</em> uses a visually rich format to engage your mind, rather than a text-heavy approach to put you to sleep. Why waste your time struggling with new concepts? This multi-sensory learning experience is designed for the way your brain really works.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a02-head-first-c"><a class="header-anchor" href="#span-id-a02-head-first-c">¶</a><span id="a02">Head First C</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/ad4e671e2a2348a80e1a7d57c1226392ca625c5b.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=fd231ac95a5d2de5bc3f7ae72c7e776d" alt=""></p>
+<p>Ever wished you could learn C from a book? <em>Head First C</em> provides a complete learning experience for C and structured imperative programming. With a unique method that goes beyond syntax and how-to manuals, this guide not only teaches you the language, it helps you understand how to be a great programmer. You’ll learn key areas such as language basics, pointers and pointer arithmetic, and dynamic memory management. Advanced topics include multi-threading and network programming—topics typically covered on a college-level course.</p>
+<p>This book also features labs: in-depth projects intended to stretch your abilities, test your new skills, and build confidence. Head First C mimics the style of college-level C courses, making it ideal as an accessible textbook for students.</p>
+<p>We think your time is too valuable to waste struggling with new concepts. Using the latest research in cognitive science and learning theory to craft a multi-sensory learning experience, Head First C uses a visually rich format designed for the way your brain works, not a text-heavy approach that puts you to sleep.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a03-head-first-object-oriented-analysis-and-design"><a class="header-anchor" href="#span-id-a03-head-first-object-oriented-analysis-and-design">¶</a><span id="a03">Head First Object-Oriented Analysis and Design</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/02aeeaef54f2c41102dda56c8342bef9d7fa25d0.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=a007caee91434eee2a5d28d182ad9d15" alt=""></p>
+<p>Head First Object-Oriented Analysis &amp; Design</p>
+<p>shows you how to analyze, design, and write serious object-oriented software: software that’s easy to reuse, maintain, and extend; software that doesn’t hurt your head; software that lets you add new features without breaking the old ones. Inside you will learn how to:</p>
+<ul>
+<li>Use OO principles like encapsulation and delegation to build applications that are flexible</li>
+<li>Apply the Open-Closed Principle (OCP) and the Single Responsibility Principle (SRP) to promote reuse of your code</li>
+<li>Leverage the power of design patterns to solve your problems more efficiently</li>
+<li>Use UML, use cases, and diagrams to ensure that all stakeholders arecommunicating clearly to help you deliver the right software that meets everyone’s needs.</li>
+</ul>
+<p>By exploiting how your brain works,</p>
+<p>Head First Object-Oriented Analysis &amp; Design</p>
+<p>compresses the time it takes to learn and retain complex information. Expect to have fun, expect to learn, expect to be writing great software consistently by the time you’re finished reading this!</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a04-head-first-sql"><a class="header-anchor" href="#span-id-a04-head-first-sql">¶</a><span id="a04">Head First SQL</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/a775303a7c8318f392ed305e7d05bc43957b9d3a.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=39f3f2457d2093c1aa743b3ca3df3cb1" alt=""></p>
+<p>Is your data dragging you down? Are your tables all tangled up? Well we’ve got the tools to teach you just how to wrangle your databases into submission. Using the latest research in neurobiology, cognitive science, and learning theory to craft a multi-sensory SQL learning experience, <em>Head First SQL</em> has a visually rich format designed for the way your brain works, not a text-heavy approach that puts you to sleep. Maybe you’ve written some simple SQL queries to interact with databases. But now you want more, you want to really dig into those databases and work with your data. <em>Head First SQL</em> will show you the fundamentals of SQL and how to really take advantage of it. We’ll take you on a journey through the language, from basic INSERT statements and SELECT queries to hardcore database manipulation with indices, joins, and transactions. We all know “Data is Power” - but we’ll show you how to have “Power over your Data”. Expect to have fun, expect to learn, and expect to be querying, normalizing, and joining your data like a pro by the time you’re finished reading!</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a05-head-first-statistics"><a class="header-anchor" href="#span-id-a05-head-first-statistics">¶</a><span id="a05">Head First Statistics</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/1025014f57a6e7c81a03f3b302eebab1b9bdc417.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=dd66fea5cbdfdf270b2127098eed935c" alt=""></p>
+<p>Wouldn’t it be great if there were a statistics book that made histograms, probability distributions, and chi square analysis more enjoyable than going to the dentist? <em>Head First Statistics</em> brings this typically dry subject to life, teaching you everything you want and need to know about statistics through engaging, interactive, and thought-provoking material, full of puzzles, stories, quizzes, visual aids, and real-world examples.</p>
+<p>Whether you’re a student, a professional, or just curious about statistical analysis, Head First’s brain-friendly formula helps you get a firm grasp of statistics so you can understand key points and actually <em>use</em> them. Learn to present data visually with charts and plots; discover the difference between taking the average with mean, median, and mode, and why it’s important; learn how to calculate probability and expectation; and much more.</p>
+<p><em>Head First Statistics</em> is ideal for high school and college students taking statistics and satisfies the requirements for passing the College Board’s Advanced Placement (AP) Statistics Exam.</p>
+</blockquote>
+<h3 id="8"><a class="header-anchor" href="#8">¶</a>8$+</h3>
+<blockquote>
+<h4 id="span-id-b01-head-first-javascript-programming"><a class="header-anchor" href="#span-id-b01-head-first-javascript-programming">¶</a><span id="b01">Head First JavaScript Programming</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/bc6bfba799bfee2726e2df835ed825a2cf982183.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=812766723c3f7529413c39e7bbeb995a" alt=""></p>
+<p>This brain-friendly guide teaches you everything from JavaScript language fundamentals to advanced topics, including objects, functions, and the browser’s document object model. You won’t just be reading—you’ll be playing games, solving puzzles, pondering mysteries, and interacting with JavaScript in ways you never imagined. And you’ll write real code, lots of it, so you can start building your own web applications. This book replaces Head First JavaScript, which is now out of print.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b02-head-first-pmp"><a class="header-anchor" href="#span-id-b02-head-first-pmp">¶</a><span id="b02">Head First PMP</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/cba6182d0eb4edf2491b4d47ad99754375797af5.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=0f85a7082e1016e504814ccb7578a692" alt=""></p>
+<p>Learn the latest principles and certification objectives in <em>The PMBOK® Guide</em>, (Fifth Version), in a unique and inspiring way with <em>Head First PMP</em>. This book helps you prepare for the PMP certification exam using a visually rich format designed for the way your brain works. You’ll find a full-length sample exam included inside the book.</p>
+<p>More than just proof of passing a test, a PMP certification means that you have the knowledge to solve most common project problems. But studying for a difficult four-hour exam on project management isn’t easy, even for experienced project managers. Drawing on the latest research in neurobiology, cognitive science, and learning theory, <em>Head First PMP</em> offers you a multi-sensory experience that helps the material stick, not a text-heavy approach that puts you to sleep.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b03-head-first-html-and-css-second-edition"><a class="header-anchor" href="#span-id-b03-head-first-html-and-css-second-edition">¶</a><span id="b03">Head First HTML and CSS (Second Edition)</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/4b4515e9d0a9985eb3be9bf17699747e1fd0b278.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=586f169c44a24ae29e31bc5b382cec27" alt=""></p>
+<p>Tired of reading HTML books that only make sense after you’re an expert? Then it’s about time you picked up the newly revised Head First HTML and CSS and really learned HTML. You want to learn HTML and CSS so you can finally create those web pages you’ve always wanted, so you can communicate more effectively with friends, family, fans, and fanatic customers. You also want to do it right, using the latest HTML5 standards, so you can actually maintain and expand your web pages over time so they work in all browsers and mobile devices.</p>
+<p>In this book, you’ll learn the real secrets of creating web pages, and, most importantly, you’ll learn them in a way that won’t put you to sleep. If you’ve read a Head First book, you know what to expect: a visually-rich format designed for the way your brain works. Using the latest research in neurobiology, cognitive science, and learning theory, this book will load HTML and CSS into your brain in a way that sticks.</p>
+<p>So what are you waiting for? Leave those other dusty books behind and come join us in Webville. Your tour is about to begin.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b04-head-first-c-third-edition"><a class="header-anchor" href="#span-id-b04-head-first-c-third-edition">¶</a><span id="b04">Head First C# (Third Edition)</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/3ac27be07d56dee00d5dbc36fe58c2c8a57fb5a3.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=7862feae584272a81228cbda9c263aaf" alt=""></p>
+<p>Ever wished you could learn C from a book? <em>Head First C</em> provides a complete learning experience for C and structured imperative programming. With a unique method that goes beyond syntax and how-to manuals, this guide not only teaches you the language, it helps you understand how to be a great programmer. You’ll learn key areas such as language basics, pointers and pointer arithmetic, and dynamic memory management. Advanced topics include multi-threading and network programming topics typically covered on a college-level course.</p>
+<p>This book also features labs: in-depth projects intended to stretch your abilities, test your new skills, and build confidence. Head First C mimics the style of college-level C courses, making it ideal as an accessible textbook for students.</p>
+<p>We think your time is too valuable to waste struggling with new concepts. Using the latest research in cognitive science and learning theory to craft a multi-sensory learning experience, Head First C uses a visually rich format designed for the way your brain works, not a text-heavy approach that puts you to sleep.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b05-head-first-agile"><a class="header-anchor" href="#span-id-b05-head-first-agile">¶</a><span id="b05">Head First Agile</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/bd9b383faa3a0f386340090f6ef2601e08fefc09.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=32f861c40b33140d55fa3fc034149cbd" alt=""></p>
+<p>Head First Agile is a complete guide to learning real-world agile ideas, practices, principles.</p>
+<p><strong>What will you learn from this book?</strong></p>
+<p>In <em>Head First Agile</em>, you’ll learn all about the ideas behind agile and the straightforward practices that drive it. You’ll take deep dives into Scrum, XP, Lean, and Kanban, the most common real-world agile approaches today. You’ll learn how to use agile to help your teams plan better, work better together, write better code, and improve as a team—because agile not only leads to great results, but agile teams say they also have a much better time at work. Head First Agile will help you get agile into your brain… and onto your team!</p>
+<p><strong>Preparing for your PMI-ACP® certification?</strong></p>
+<p>This book also has everything you need to get certified, with 100% coverage of the PMI-ACP® exam. Luckily, the most effective way to prepare for the exam is to get agile into your brain—so instead of cramming, you’re learning.</p>
+<p><strong>Why does this book look so different?</strong></p>
+<p>Based on the latest research in cognitive science and learning theory, Head First Agile uses a visually rich format to engage your mind, rather than a text-heavy approach that puts you to sleep. Why waste your time struggling with new concepts? This multi-sensory learning experience is designed for the way your brain really works.</p>
+</blockquote>
+<h3 id="15"><a class="header-anchor" href="#15">¶</a>15$+</h3>
+<blockquote>
+<h4 id="span-id-c01-head-first-design-patterns"><a class="header-anchor" href="#span-id-c01-head-first-design-patterns">¶</a><span id="c01">Head First Design Patterns</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/3bacc10a4a2bd53a8e0be92c1dc199ee8b639a85.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=a49b5828f6464f8aab3f7b901550c412" alt=""></p>
+<p><strong>What’s so special about design patterns?</strong></p>
+<p>At any given moment, someone struggles with the same software design problems you have. And, chances are, someone else has already solved your problem. This edition of Head First Design Patterns—now updated for Java 8—shows you the tried-and-true, road-tested patterns used by developers to create functional, elegant, reusable, and flexible software. By the time you finish this book, you’ll be able to take advantage of the best design practices and experiences of those who have fought the beast of software design and triumphed.</p>
+<p><strong>What’s so special about this book?</strong></p>
+<p>We think your time is too valuable to spend struggling with new concepts. Using the latest research in cognitive science and learning theory to craft a multi-sensory learning experience, Head First Design Patterns uses a visually rich format designed for the way your brain works, not a text-heavy approach that puts you to sleep.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c02-head-first-java-second-edition"><a class="header-anchor" href="#span-id-c02-head-first-java-second-edition">¶</a><span id="c02">Head First Java (Second Edition)</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/996603b981bb3b832bcf3d1473c374ec44f86f41.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=a974998bcd9a5cac0365b9536d07b02c" alt=""></p>
+<p>Learning a complex new language is no easy task especially when it s an object-oriented computer programming language like Java. You might think the problem is your brain. It seems to have a mind of its own, a mind that doesn’t always want to take in the dry, technical stuff you’re forced to study.</p>
+<p>The fact is your brain craves novelty. It’s constantly searching, scanning, waiting for something unusual to happen. After all, that’s the way it was built to help you stay alive. It takes all the routine, ordinary, dull stuff and filters it to the background so it won’t interfere with your brain’s real work–recording things that matter. How does your brain know what matters? It’s like the creators of the Head First approach say, suppose you’re out for a hike and a tiger jumps in front of you, what happens in your brain? Neurons fire. Emotions crank up. Chemicals surge.</p>
+<p>That’s how your brain knows.</p>
+<p>And that’s how your brain will learn Java. <em>Head First Java</em> combines puzzles, strong visuals, mysteries, and soul-searching interviews with famous Java objects to engage you in many different ways. It’s fast, it’s fun, and it’s effective. And, despite its playful appearance, Head First Java is serious stuff: a complete introduction to object-oriented programming and Java. You’ll learn everything from the fundamentals to advanced topics, including threads, network sockets, and distributed programming with RMI. And the new. second edition focuses on Java 5.0, the latest version of the Java language and development platform. Because Java 5.0 is a major update to the platform, with deep, code-level changes, even more careful study and implementation is required. So learning the Head First way is more important than ever.</p>
+<p>If you’ve read a Head First book, you know what to expect–a visually rich format designed for the way your brain works. If you haven’t, you’re in for a treat. You’ll see why people say it’s unlike any other Java book you’ve ever read.</p>
+<p>By exploiting how your brain works, <em>Head First Java</em> compresses the time it takes to learn and retain–complex information. Its unique approach not only shows you what you need to know about Java syntax, it teaches you to think like a Java programmer. If you want to be bored, buy some other book. But if you want to understand Java, this book’s for you.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c03-head-first-python-second-edition"><a class="header-anchor" href="#span-id-c03-head-first-python-second-edition">¶</a><span id="c03">Head First Python (Second Edition)</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/60a9b1d4845a48e3d9e703aeb4e96986cd595995.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=51d1d4b04c20ecb31ddb708a28a5a1ff" alt=""></p>
+<p>Want to learn the Python language without slogging your way through how-to manuals? With <em>Head First Python</em>, you’ll quickly grasp Python’s fundamentals, working with the built-in data structures and functions. Then you’ll move on to building your very own webapp, exploring database management, exception handling, and data wrangling. If you’re intrigued by what you can do with context managers, decorators, comprehensions, and generators, it’s all here. This second edition is a complete learning experience that will help you become a bonafide Python programmer in no time.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c04-head-first-learn-to-code"><a class="header-anchor" href="#span-id-c04-head-first-learn-to-code">¶</a><span id="c04">Head First Learn to Code</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/c9805ca59ef58b3e3781e45fc321e93b34ce3383.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=daee4baa8cea3fa007d78e8ff30096c5" alt=""></p>
+<p><strong>What will you learn from this book?</strong></p>
+<p>It’s no secret the world around you is becoming more connected, more configurable, more programmable, more computational. You can remain a passive participant, or you can learn to code. With <em>Head First Learn to Code</em> you’ll learn how to <em>think computationally</em>and how to <em>write code</em> to make your computer, mobile device, or anything with a CPU <em>do things for you.</em> Using the Python programming language, you’ll learn step by step the core concepts of programming as well as many fundamental topics from computer science, such as data structures, storage, abstraction, recursion, and modularity.</p>
+<p><strong>Why does this book look so different?</strong></p>
+<p>Based on the latest research in cognitive science and learning theory, <em>Head First Learn to Code</em> uses a visually rich format to engage your mind, rather than a text-heavy approach that puts you to sleep. Why waste your time struggling with new concepts? This multi-sensory learning experience is designed for the way your brain really works.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c05-head-first-android-development-second-edition"><a class="header-anchor" href="#span-id-c05-head-first-android-development-second-edition">¶</a><span id="c05">Head First Android Development (Second Edition)</span></h4>
+<p><img src="https://humblebundle.imgix.net/misc/files/hashed/cd180fc4b1e03338a3ea46edb894f055b1ff7255.png?auto=format&amp;fit=crop&amp;h=218&amp;w=150&amp;s=3a414cdfeaa1a8d96defebc78d07d155" alt=""></p>
+<p><strong>What will you learn from this book?</strong></p>
+<p>If you have an idea for a killer Android app, this fully revised and updated edition will help you build your first working application in a jiffy. You’ll learn hands-on how to structure your app, design flexible and interactive interfaces, run services in the background, make your app work on various smartphones and tablets, and much more. It’s like having an experienced Android developer sitting right next to you! All you need to get started is some Java know-how.</p>
+<p><strong>Why does this book look so different?</strong></p>
+<p>Based on the latest research in cognitive science and learning theory, <em>Head First Android Development</em> uses a visually rich format to engage your mind, rather than a text-heavy approach that puts you to sleep. Why waste your time struggling with new concepts? This multi-sensory learning experience is designed for the way your brain really works.</p>
+</blockquote>
+<p>QUOTE:<a href="https://steamcn.com/t428196-1-1" target="_blank" rel="noopener">Head First Series by O’Reilly</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HumbleBundle/" rel="tag"># HumbleBundle</a>
+          
+            <a href="/tags/Book/" rel="tag"># Book</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/21/UI-UX-by-Wiley/" rel="next" title="UI/UX by Wiley">
+                <i class="fa fa-chevron-left"></i> UI/UX by Wiley
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Lvoicc">
+            
+              <p class="site-author-name" itemprop="name">Lvoicc</p>
+              <p class="site-description motion-element" itemprop="description">Lvoicc's Blog</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lvoicc" title="GitHub &rarr; https://github.com/lvoicc" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:lvoicc@outlook.com" title="E-Mail &rarr; mailto:lvoicc@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/yourname" title="Weibo &rarr; https://weibo.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/Lvoico" title="Twitter &rarr; https://twitter.com/Lvoico" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#intro"><span class="nav-number">1.</span> <span class="nav-text">¶Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">2.</span> <span class="nav-text">¶1$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a01-head-first-ruby"><span class="nav-number">2.1.</span> <span class="nav-text">¶Head First Ruby</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a02-head-first-c"><span class="nav-number">2.2.</span> <span class="nav-text">¶Head First C</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a03-head-first-object-oriented-analysis-and-design"><span class="nav-number">2.3.</span> <span class="nav-text">¶Head First Object-Oriented Analysis and Design</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a04-head-first-sql"><span class="nav-number">2.4.</span> <span class="nav-text">¶Head First SQL</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a05-head-first-statistics"><span class="nav-number">2.5.</span> <span class="nav-text">¶Head First Statistics</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8"><span class="nav-number">3.</span> <span class="nav-text">¶8$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b01-head-first-javascript-programming"><span class="nav-number">3.1.</span> <span class="nav-text">¶Head First JavaScript Programming</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b02-head-first-pmp"><span class="nav-number">3.2.</span> <span class="nav-text">¶Head First PMP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b03-head-first-html-and-css-second-edition"><span class="nav-number">3.3.</span> <span class="nav-text">¶Head First HTML and CSS (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b04-head-first-c-third-edition"><span class="nav-number">3.4.</span> <span class="nav-text">¶Head First C# (Third Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b05-head-first-agile"><span class="nav-number">3.5.</span> <span class="nav-text">¶Head First Agile</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15"><span class="nav-number">4.</span> <span class="nav-text">¶15$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c01-head-first-design-patterns"><span class="nav-number">4.1.</span> <span class="nav-text">¶Head First Design Patterns</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c02-head-first-java-second-edition"><span class="nav-number">4.2.</span> <span class="nav-text">¶Head First Java (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c03-head-first-python-second-edition"><span class="nav-number">4.3.</span> <span class="nav-text">¶Head First Python (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c04-head-first-learn-to-code"><span class="nav-number">4.4.</span> <span class="nav-text">¶Head First Learn to Code</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c05-head-first-android-development-second-edition"><span class="nav-number">4.5.</span> <span class="nav-text">¶Head First Android Development (Second Edition)</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lvoicc</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+  
+  <script id="dsq-count-scr" src="https://Lvoicc.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/01/21/Head-First-Series-by-O-Reilly/";
+    this.page.identifier = "2019/01/21/Head-First-Series-by-O-Reilly/";
+    this.page.title = 'Head First Series by O\'Reilly';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://Lvoicc.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
