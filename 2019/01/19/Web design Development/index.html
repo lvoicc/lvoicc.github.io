@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="keywords" content="HumbleBundle">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Web design Development">
+<meta property="og:url" content="http://yoursite.com/2019/01/19/Web design Development/index.html">
+<meta property="og:site_name" content="Lvoicc">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://hb.imgix.net/62394db725e829de9d4ad25a71ea5fa4b3438333.png?auto=format&s=bac84af15ad3b16a87b445c86ee7054f">
+<meta property="og:image" content="https://hb.imgix.net/7e1ac356c42d5bebd775f505df4a8a2a2d2d007d.png?auto=format&w=180&s=74ebb36a1ea4de575261337a1dc73fa8">
+<meta property="og:image" content="https://hb.imgix.net/3c3eb8199f44099f0bd4654083d0d769e7433564.png?auto=format&w=180&s=aa46d902ca4e78b76f8421d8183be646">
+<meta property="og:image" content="https://hb.imgix.net/337c9f965c8d9685c0623e2347b30879dfeba590.png?auto=format&w=180&s=b9429225adf6adfac519c7f56eadca4a">
+<meta property="og:image" content="https://hb.imgix.net/692a069ff6cc624c664788e54e4d8d272405ef29.png?auto=format&w=180&s=9501f3601e046602bb81c1cefcc058a5">
+<meta property="og:image" content="https://hb.imgix.net/83a6879a354a2d7b95a33ffd8e60f0e4b27c999a.png?auto=format&w=180&s=ce4427939161122ab2d725eff24da0da">
+<meta property="og:image" content="https://hb.imgix.net/7c24c5c742538051859d320a714c717e5bce3b66.png?auto=format&w=180&s=9ed8053a9e944861bbbbb1f3357f730c">
+<meta property="og:image" content="https://hb.imgix.net/9c7289cb3d848be9d1ad4e60663a8c4bdd46ed80.png?auto=format&w=180&s=70a73fb27db9081c5758563dc4d8a029">
+<meta property="og:image" content="https://hb.imgix.net/a7a156c8792b4824129c20ea14da9f4839083e46.png?auto=format&w=180&s=521a4809fcf031a6f89e17865b43615b">
+<meta property="og:image" content="https://hb.imgix.net/fa6e606e94c337a6d01d4d7448ca53384de0c8be.png?auto=format&w=180&s=3872fb030f17fb4285f7bbbcdebe436d">
+<meta property="og:image" content="https://hb.imgix.net/2d654823d65a61dd812574e0739d508c2227b478.png?auto=format&w=180&s=440f0779c5a2308f742231f6d2e2fcfd">
+<meta property="og:image" content="https://hb.imgix.net/1f16eada2a63f37d3db60901437ac899a03f27e2.png?auto=format&w=180&s=5508b0d84668b8d804cdab4e4120047b">
+<meta property="og:image" content="https://hb.imgix.net/60a634f4240a07a08b24bece8334c831dc4846ca.png?auto=format&w=180&s=974054f2a595750304d42b9bcdae59f3">
+<meta property="og:image" content="https://hb.imgix.net/5607f59c24105ee5442983c9f4777fb90248e767.png?auto=format&w=180&s=7640825d361b1301a6d4287bf989d19a">
+<meta property="og:image" content="https://hb.imgix.net/6c393ffe0a4c9b3421a4c509e47018e618a816e0.png?auto=format&w=180&s=55469fce975e826f409ad51dabe895b7">
+<meta property="og:image" content="https://hb.imgix.net/ac014970bdbadd05ca9a45cd7b4cd391f3885fe6.png?auto=format&w=180&s=6d59e1739c82e8e31b1dc64ac639d9d7">
+<meta property="og:image" content="https://hb.imgix.net/07f3b02cabe8e6c13f7f942164d1d7e2eb1feecf.png?auto=format&w=180&s=3844ffa2ee8e0cf40a7ed86584b6ddf5">
+<meta property="og:image" content="https://hb.imgix.net/e3bfc720550d8f1466ec05b86a2566b5ebef4c56.png?auto=format&w=180&s=6458b1754e148d82ce25b18d008a8596">
+<meta property="og:image" content="https://hb.imgix.net/52ef01ee10e7c641dd4f770e4fd37b138f20b0a8.png?auto=format&w=180&s=7395d61347435449290cf78eb6be15f7">
+<meta property="og:image" content="https://hb.imgix.net/aa41e4e48148e747974fabf90ff98f5fb26d25a5.png?auto=format&w=180&s=6f24246a3d9b410d3ffd1b8ea060f232">
+<meta property="og:image" content="https://hb.imgix.net/c8d8e014cc4e497358bbaa96b2545d81f380c31b.png?auto=format&w=180&s=955d93c9e065fe36146ec1426be93b75">
+<meta property="og:image" content="https://hb.imgix.net/386b555861559670b4e818056d4d1636e57fe429.png?auto=format&w=180&s=5377220dad07b31e8a25e58f9694d0c3">
+<meta property="og:image" content="https://hb.imgix.net/69a29671d76b3a24289d27dde93adf4802a18896.png?auto=format&w=180&s=5821d2e31928f6c62e3c099075783e92">
+<meta property="og:image" content="https://hb.imgix.net/267e1f250df4a57ad154b49797609d22e7da47b4.png?auto=format&w=180&s=90889e5b289315d1921fd81efe4a357a">
+<meta property="og:image" content="https://hb.imgix.net/178223d025db40e11d330365d3e6393270ab753a.png?auto=format&w=180&s=a1dcc1067352b4663a682df0e8e16378">
+<meta property="og:image" content="https://hb.imgix.net/42327cd8d675ab3302468845fda4ed7e1818e250.png?auto=format&w=180&s=2634045a3e11c7215ce54a5fb5daab2b">
+<meta property="og:updated_time" content="2019-01-20T14:18:04.407Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Web design Development">
+<meta name="twitter:image" content="https://hb.imgix.net/62394db725e829de9d4ad25a71ea5fa4b3438333.png?auto=format&s=bac84af15ad3b16a87b445c86ee7054f">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/01/19/Web design Development/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Web design Development | Lvoicc</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lvoicc</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学海无涯</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/19/Web design Development/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lvoicc">
+      <meta itemprop="description" content="Lvoicc's Blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lvoicc">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Web design Development
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-19 01:45:48" itemprop="dateCreated datePublished" datetime="2019-01-19T01:45:48+08:00">2019-01-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-20 22:18:04" itemprop="dateModified" datetime="2019-01-20T22:18:04+08:00">2019-01-20</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Humble-Book-Bundle/" itemprop="url" rel="index"><span itemprop="name">Humble Book Bundle</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <a href="/2019/01/19/Web design Development/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/19/Web design Development/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://hb.imgix.net/62394db725e829de9d4ad25a71ea5fa4b3438333.png?auto=format&amp;s=bac84af15ad3b16a87b445c86ee7054f" alt=""></p>
+<a id="more"></a>
+<h3 id="1"><a class="header-anchor" href="#1">¶</a>1$+</h3>
+<blockquote>
+<h4 id="python-interviews"><a class="header-anchor" href="#python-interviews">¶</a>Python Interviews</h4>
+<p><img src="https://hb.imgix.net/7e1ac356c42d5bebd775f505df4a8a2a2d2d007d.png?auto=format&amp;w=180&amp;s=74ebb36a1ea4de575261337a1dc73fa8" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Hear from these key Python thinkers about the current status of Python, and where it’s heading in the future</li>
+<li>Listen to their close thoughts on significant Python topics, such as Python’s role in scientific computing, and machine learning`</li>
+<li>Understand the direction of Python, and what needs to change for Python 4</li>
+</ul>
+<p>Who This Book is For</p>
+<p>Python programmers and students interested in the way that Python is used – past and present – with useful anecdotes. It will also be of interest to those looking to gain insights from top programmers.</p>
+</blockquote>
+<blockquote>
+<h4 id="opencv-3-computer-vision-with-python-cookbook"><a class="header-anchor" href="#opencv-3-computer-vision-with-python-cookbook">¶</a>OpenCV 3 Computer Vision with Python Cookbook</h4>
+<p><img src="https://hb.imgix.net/3c3eb8199f44099f0bd4654083d0d769e7433564.png?auto=format&amp;w=180&amp;s=aa46d902ca4e78b76f8421d8183be646" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Build computer vision applications with OpenCV functionality via Python API</li>
+<li>Get to grips with image processing, multiple view geometry, and machine learning</li>
+<li>Learn to use deep learning models for image classification, object detection, and face recognition</li>
+</ul>
+<p>Who This Book is For</p>
+<p>This book is for developers who have a basic knowledge of Python. If you are aware of the basics of OpenCV and are ready to build computer vision systems that are smarter, faster, more complex, and more practical than the competition, then this book is for you.</p>
+</blockquote>
+<blockquote>
+<h4 id="learn-python-3-from-scratch-video"><a class="header-anchor" href="#learn-python-3-from-scratch-video">¶</a>Learn Python 3 from Scratch <code>(Video)</code></h4>
+<p><img src="https://hb.imgix.net/337c9f965c8d9685c0623e2347b30879dfeba590.png?auto=format&amp;w=180&amp;s=b9429225adf6adfac519c7f56eadca4a" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Each lecture consist of a video screencast and code files</li>
+<li>There are quizzes and homework to test your knowledge</li>
+<li>There’s a high focus on practice and asking questions</li>
+<li>You will also learn coding best practices</li>
+</ul>
+<p>Who This Video is For</p>
+<p>This course is targeted at both beginners with zero programming background an experienced programmers in another programming language. Testers who want to automate tools will also find it useful.</p>
+</blockquote>
+<blockquote>
+<h4 id="mastering-flask-web-development"><a class="header-anchor" href="#mastering-flask-web-development">¶</a>Mastering Flask Web Development</h4>
+<p><img src="https://hb.imgix.net/692a069ff6cc624c664788e54e4d8d272405ef29.png?auto=format&amp;w=180&amp;s=9501f3601e046602bb81c1cefcc058a5" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Create production-ready MVC and REST API with the dynamic features of Flask</li>
+<li>Utilize the various extensions like Flask-JWT and Flask-SQLAlchemy to develop powerful applications</li>
+<li>Deploy your flask application on real-world platforms like AWS and Heroku on VM’s or Docker containers</li>
+</ul>
+<p>Who This Book is For</p>
+<p>The ideal target audience for this book would be Python developers who want to use Flask and its advanced features to create Enterprise grade and lightweight applications. The book is for those who have some exposure of Flask and want to take it from introductory to master level.</p>
+</blockquote>
+<blockquote>
+<h4 id="data-visualization-with-python-the-complete-guide-video"><a class="header-anchor" href="#data-visualization-with-python-the-complete-guide-video">¶</a>Data Visualization with Python: The Complete Guide <code>(Video)</code></h4>
+<p><img src="https://hb.imgix.net/83a6879a354a2d7b95a33ffd8e60f0e4b27c999a.png?auto=format&amp;w=180&amp;s=ce4427939161122ab2d725eff24da0da" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>This course will help you understand the importance of data science, along with becoming familiar with Matplotlib, Python’s very own visualization library.</li>
+<li>Learn about the linear general statistics and data analysis.</li>
+<li>We’ll also go over important concepts such as data clustering, hypothesis gradient descent, and advanced data visualizations.</li>
+</ul>
+<p>Who This Video is For</p>
+<p>Beginner python developers who want to learn Data science will find this course very useful.</p>
+</blockquote>
+<h3 id="8"><a class="header-anchor" href="#8">¶</a>8$+</h3>
+<blockquote>
+<h4 id="python-automation-cookbook"><a class="header-anchor" href="#python-automation-cookbook">¶</a>Python Automation Cookbook</h4>
+<p><img src="https://hb.imgix.net/7c24c5c742538051859d320a714c717e5bce3b66.png?auto=format&amp;w=180&amp;s=9ed8053a9e944861bbbbb1f3357f730c" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Automate integral business processes such as report generation, email marketing, and lead generation</li>
+<li>Build your first web application that scrapes data and accesses websites’ APIs</li>
+<li>Create graphic-rich charts, graphs, and maps using Matplotlib</li>
+</ul>
+<p>Who This Book is For</p>
+<p>The Python Automation Cookbook is for you if you are a developer or anyone who wants to automate monotonous manual tasks related to fields such as finance, sales, and HR, among others.</p>
+</blockquote>
+<blockquote>
+<h4 id="python-machine-learning-by-example"><a class="header-anchor" href="#python-machine-learning-by-example">¶</a>Python Machine Learning By Example</h4>
+<p><img src="https://hb.imgix.net/9c7289cb3d848be9d1ad4e60663a8c4bdd46ed80.png?auto=format&amp;w=180&amp;s=70a73fb27db9081c5758563dc4d8a029" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Learn the fundamentals of machine learning and build your own intelligent applications</li>
+<li>Master the art of building your own machine learning systems with this example-based practical guide</li>
+<li>Work with important classification and regression algorithms and other machine learning techniques</li>
+</ul>
+<p>Who This Book is For</p>
+<p>This book is for anyone interested in entering the data science stream with machine learning. Basic familiarity with Python is assumed.</p>
+</blockquote>
+<blockquote>
+<h4 id="qt5-python-gui-programming-cookbook"><a class="header-anchor" href="#qt5-python-gui-programming-cookbook">¶</a>Qt5 Python GUI Programming Cookbook</h4>
+<p><img src="https://hb.imgix.net/a7a156c8792b4824129c20ea14da9f4839083e46.png?auto=format&amp;w=180&amp;s=521a4809fcf031a6f89e17865b43615b" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Get succinct QT solutions to pressing GUI programming problems in Python</li>
+<li>Learn how to effectively implement reactive programming</li>
+<li>Build customized applications that are robust and reliable</li>
+</ul>
+<p>Who This Book is For</p>
+<p>If you’re an intermediate Python programmer wishing to enhance your coding skills by writing powerful GUIs in Python using PyQT, this is the book for you.</p>
+</blockquote>
+<blockquote>
+<h4 id="python-microservices-development"><a class="header-anchor" href="#python-microservices-development">¶</a>Python Microservices Development</h4>
+<p><img src="https://hb.imgix.net/fa6e606e94c337a6d01d4d7448ca53384de0c8be.png?auto=format&amp;w=180&amp;s=3872fb030f17fb4285f7bbbcdebe436d" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>A very useful guide for Python developers who are shifting to the new microservices-based development</li>
+<li>A concise, up-to-date guide to building efficient and lightweight microservices in Python using Flask, Tox, and other tools</li>
+<li>Learn to use Docker containers, CoreOS, and Amazon Web Services to deploy your services</li>
+</ul>
+<p>Who This Book is For</p>
+<p>This book is for developers who have basic knowledge of Python, the command line, and HTTP-based application principles, and those who want to learn how to build, test, scale, and manage Python 3 microservices. No prior experience of writing microservices in Python is assumed.</p>
+</blockquote>
+<blockquote>
+<h4 id="hands-on-data-structures-and-algorithms-with-python"><a class="header-anchor" href="#hands-on-data-structures-and-algorithms-with-python">¶</a>Hands-On Data Structures and Algorithms with Python</h4>
+<p><img src="https://hb.imgix.net/2d654823d65a61dd812574e0739d508c2227b478.png?auto=format&amp;w=180&amp;s=440f0779c5a2308f742231f6d2e2fcfd" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Understand the analysis and design of fundamental Python data structures</li>
+<li>Explore advanced Python concepts such as Big O notation and dynamic programming</li>
+<li>Learn functional and reactive implementations of traditional data structures</li>
+</ul>
+<p>Who This Book is For</p>
+<p>This book is for developers who want to learn data structures and algorithms in Python to write complex and flexible programs. Basic Python programming knowledge is expected.</p>
+</blockquote>
+<blockquote>
+<h4 id="python-high-performance-second-edition-second-edition"><a class="header-anchor" href="#python-high-performance-second-edition-second-edition">¶</a>Python High Performance, Second Edition <code>(Second Edition)</code></h4>
+<p><img src="https://hb.imgix.net/1f16eada2a63f37d3db60901437ac899a03f27e2.png?auto=format&amp;w=180&amp;s=5508b0d84668b8d804cdab4e4120047b" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Identify the bottlenecks in your applications and solve them using the best profiling techniques</li>
+<li>Write efficient numerical code in NumPy, Cython, and Pandas</li>
+<li>Adapt your programs to run on multiple processors and machines with parallel programming</li>
+</ul>
+<p>Who This Book is For</p>
+<p>The book is aimed at Python developers who want to improve the performance of their application. Basic knowledge of Python is expected</p>
+</blockquote>
+<blockquote>
+<h4 id="hands-on-software-engineering-with-python"><a class="header-anchor" href="#hands-on-software-engineering-with-python">¶</a>Hands-On Software Engineering with Python</h4>
+<p><img src="https://hb.imgix.net/60a634f4240a07a08b24bece8334c831dc4846ca.png?auto=format&amp;w=180&amp;s=974054f2a595750304d42b9bcdae59f3" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Master the tools and techniques used in software engineering</li>
+<li>Evaluates available database options and selects one for the final Central Office system-components</li>
+<li>Experience the iterations software go through and craft enterprise-grade systems</li>
+</ul>
+<p>Who This Book is For</p>
+<p>Hands-On Software Engineering with Python is for you if you are a developer having basic understanding of programming and its paradigms and want to skill up as a senior programmer. It is assumed that you have basic Python knowledge.</p>
+</blockquote>
+<blockquote>
+<h4 id="rest-apis-with-flask-and-python-video"><a class="header-anchor" href="#rest-apis-with-flask-and-python-video">¶</a>REST APIs with Flask and Python <code>(Video)</code></h4>
+<p><img src="https://hb.imgix.net/5607f59c24105ee5442983c9f4777fb90248e767.png?auto=format&amp;w=180&amp;s=7640825d361b1301a6d4287bf989d19a" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Create resource-based, production-ready REST APIs using Flask and popular extensions</li>
+<li>Using SQLAlchemy to easily and efficiently store resources to a database</li>
+<li>Understand the complex intricacies of deployments and performance of REST APIs</li>
+</ul>
+<p>Who This Video is For</p>
+<p>Students wanting to extend the capabilities of mobile and web applications by using server-side technologiesSoftware developers looking to expand their skill-set by learning to develop professional grade REST APIsThose looking to learn Python while specifically catering to web services</p>
+</blockquote>
+<blockquote>
+<h4 id="django-2-by-example"><a class="header-anchor" href="#django-2-by-example">¶</a>Django 2 by Example</h4>
+<p><img src="https://hb.imgix.net/6c393ffe0a4c9b3421a4c509e47018e618a816e0.png?auto=format&amp;w=180&amp;s=55469fce975e826f409ad51dabe895b7" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Learn Django by building real-world web applications from scratch</li>
+<li>Develop powerful web applications quickly using the best coding practices</li>
+<li>Integrate other technologies into your application with clear, step-by-step explanations and comprehensive example code</li>
+</ul>
+<p>Who This Book is For</p>
+<p>If you are a web developer who wants to see how to build professional sites with Django, this book is for you. You will need a basic knowledge of Python, HTML, and JavaScript, but you don’t need to have worked with Django before.</p>
+</blockquote>
+<h3 id="15"><a class="header-anchor" href="#15">¶</a>15$+</h3>
+<blockquote>
+<h4 id="data-analysis-with-pandas-and-python-video"><a class="header-anchor" href="#data-analysis-with-pandas-and-python-video">¶</a>Data Analysis with Pandas and Python <code>(Video)</code></h4>
+<p><img src="https://hb.imgix.net/ac014970bdbadd05ca9a45cd7b4cd391f3885fe6.png?auto=format&amp;w=180&amp;s=6d59e1739c82e8e31b1dc64ac639d9d7" alt=""></p>
+<p>Key Features</p>
+<p>​</p>
+<ul>
+<li>To take your data analysis skills to the next level</li>
+<li>Introduces you to the popular Pandas library built on top of the Python programming language.</li>
+<li>Over the course of more than 19 hours, the author takes you on step-by-step through Pandas, from installation to visualization! We’ll cover hundreds of different methods, attributes, features, and functionalities packed away inside this awesome library.</li>
+</ul>
+<p>Who This Video is For</p>
+<p>Data analysts and business analysts, Excel users looking to learn a more powerful software for data analysis</p>
+</blockquote>
+<blockquote>
+<h4 id="learn-python-by-building-a-blockchain-and-cryptocurrency-video"><a class="header-anchor" href="#learn-python-by-building-a-blockchain-and-cryptocurrency-video">¶</a>Learn Python by Building a Blockchain and Cryptocurrency <code>(Video)</code></h4>
+<p><img src="https://hb.imgix.net/07f3b02cabe8e6c13f7f942164d1d7e2eb1feecf.png?auto=format&amp;w=180&amp;s=3844ffa2ee8e0cf40a7ed86584b6ddf5" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Use Python to build your own basic Blockchain and Cryptocurrency (Coin)!</li>
+<li>Dive into web development and data science with Python</li>
+</ul>
+<p>Who This Video is For</p>
+<p>This course is designed for beginner developers interested in learning Python and core internals of a Blockchain.</p>
+</blockquote>
+<blockquote>
+<h4 id="python-deep-learning-projects"><a class="header-anchor" href="#python-deep-learning-projects">¶</a>Python Deep Learning Projects</h4>
+<p><img src="https://hb.imgix.net/e3bfc720550d8f1466ec05b86a2566b5ebef4c56.png?auto=format&amp;w=180&amp;s=6458b1754e148d82ce25b18d008a8596" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Explore deep learning across computer vision, natural language processing (NLP), and image processing</li>
+<li>Discover best practices for the training of deep neural networks and their deployment</li>
+<li>Access popular deep learning models as well as widely used neural network architectures</li>
+</ul>
+<p>Who This Book is For</p>
+<p>Python Deep Learning Projects is for you if you want to get insights into deep learning, data science, and artificial intelligence. This book is also for those who want to break into deep learning and develop their own AI projects.</p>
+<p>It is assumed that you have sound knowledge of Python programming</p>
+</blockquote>
+<blockquote>
+<h4 id="python-for-finance-investment-fundamentals-and-data-analytics-video"><a class="header-anchor" href="#python-for-finance-investment-fundamentals-and-data-analytics-video">¶</a>Python for Finance: Investment Fundamentals and Data Analytics <code>(Video)</code></h4>
+<p><img src="https://hb.imgix.net/52ef01ee10e7c641dd4f770e4fd37b138f20b0a8.png?auto=format&amp;w=180&amp;s=7395d61347435449290cf78eb6be15f7" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Learn Python programming.</li>
+<li>Learn to conduct Real - World Financial Analysis in Python.</li>
+<li>A practical tutorial designed for programming beginners and aspiring data scientists.</li>
+</ul>
+<p>Who This Video is For</p>
+<p>This course is designed for data scientists, programming beginners, people interested in finance and investments, programmers who want to specialize in finance, finance graduates, and professionals who need to know more about how to apply their knowledge in Python</p>
+</blockquote>
+<blockquote>
+<h4 id="mastering-python-networking"><a class="header-anchor" href="#mastering-python-networking">¶</a>Mastering Python Networking</h4>
+<p><img src="https://hb.imgix.net/aa41e4e48148e747974fabf90ff98f5fb26d25a5.png?auto=format&amp;w=180&amp;s=6f24246a3d9b410d3ffd1b8ea060f232" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Explore the power of Python libraries to tackle difficult network problems efficiently and effectively</li>
+<li>Use Python for network device automation, De魔法主机, and software-defined networking</li>
+<li>Become an expert in implementing advanced network-related tasks with Python</li>
+</ul>
+<p>Who This Book is For</p>
+<p>Mastering Python Networking is for network engineers and programmers who want to use Python for networking. Basic familiarity with Python programming and networking-related concepts such as Transmission Control Protocol/Internet Protocol (TCP/IP) will be useful.</p>
+</blockquote>
+<blockquote>
+<h4 id="clean-code-in-python"><a class="header-anchor" href="#clean-code-in-python">¶</a>Clean Code in Python</h4>
+<p><img src="https://hb.imgix.net/c8d8e014cc4e497358bbaa96b2545d81f380c31b.png?auto=format&amp;w=180&amp;s=955d93c9e065fe36146ec1426be93b75" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Save maintenance costs by learning to fix your legacy codebase</li>
+<li>Learn the principles and techniques of refactoring</li>
+<li>Apply microservices to your legacy systems by implementing practical techniques</li>
+</ul>
+<p>Who This Book is For</p>
+<p>This book will appeal to team leads, software architects and senior software engineers who would like to work on their legacy systems to save cost and improve efficiency. A strong understanding of Programming is assumed.</p>
+</blockquote>
+<blockquote>
+<h4 id="modern-python-cookbook"><a class="header-anchor" href="#modern-python-cookbook">¶</a>Modern Python Cookbook</h4>
+<p><img src="https://hb.imgix.net/386b555861559670b4e818056d4d1636e57fe429.png?auto=format&amp;w=180&amp;s=5377220dad07b31e8a25e58f9694d0c3" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Develop succinct, expressive programs in Python</li>
+<li>Learn the best practices and common idioms through carefully explained and structured recipes</li>
+<li>Discover new ways to apply Python for the new age of development</li>
+</ul>
+<p>Who This Book is For</p>
+<p>The book is for web developers, programmers, enterprise programmers, engineers, big data scientist, and so on. If you are a beginner, Python Cookbook will get you started. If you are experienced, it will expand your knowledge base. A basic knowledge of programming would help.</p>
+</blockquote>
+<blockquote>
+<h4 id="python-3-object-oriented-programming"><a class="header-anchor" href="#python-3-object-oriented-programming">¶</a>Python 3 Object-Oriented Programming</h4>
+<p><img src="https://hb.imgix.net/69a29671d76b3a24289d27dde93adf4802a18896.png?auto=format&amp;w=180&amp;s=5821d2e31928f6c62e3c099075783e92" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>In-depth analysis of many common object-oriented design patterns that are more suitable to Python’s unique style</li>
+<li>Learn the latest Python syntax and libraries</li>
+<li>Explore abstract design patterns and implement them in Python 3.8</li>
+</ul>
+<p>Who This Book is For</p>
+<p>If you’re new to object-oriented programming techniques, or if you have basic Python skills and wish to learn in depth how and when to correctly apply OOP in Python, this is the book for you. If you are an object-oriented programmer for other languages or seeking a leg up in the new world of Python 3.8, you too will find this book a useful introduction to Python. Previous experience with Python 3 is not necessary.</p>
+</blockquote>
+<blockquote>
+<h4 id="raspberry-pi-3-cookbook-for-python-programmers"><a class="header-anchor" href="#raspberry-pi-3-cookbook-for-python-programmers">¶</a>Raspberry Pi 3 Cookbook for Python Programmers</h4>
+<p><img src="https://hb.imgix.net/267e1f250df4a57ad154b49797609d22e7da47b4.png?auto=format&amp;w=180&amp;s=90889e5b289315d1921fd81efe4a357a" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Leverage the power of Raspberry Pi 3 using Python programming</li>
+<li>Create 3D games, build neural network modules, and interface with your own circuits</li>
+<li>Packed with clear, step-by-step recipes to walk you through the capabilities of Raspberry Pi</li>
+</ul>
+<p>Who This Book is For</p>
+<p>This book is for anyone who wants to master the skills of Python programming using Raspberry Pi 3. Prior knowledge of Python will be an added advantage.</p>
+</blockquote>
+<blockquote>
+<h4 id="python-for-offensive-pentest-a-complete-practical-course-video"><a class="header-anchor" href="#python-for-offensive-pentest-a-complete-practical-course-video">¶</a>Python For Offensive PenTest: A Complete Practical Course<code>(Video)</code></h4>
+<p><img src="https://hb.imgix.net/178223d025db40e11d330365d3e6393270ab753a.png?auto=format&amp;w=180&amp;s=a1dcc1067352b4663a682df0e8e16378" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Easy to learn</li>
+<li>Cross platform</li>
+<li>Unlimited third party libraries</li>
+<li>Get your job done with few lines</li>
+<li>Ranked as #1 for the most popular programming languages</li>
+<li>Plenty of open source hacking tools are written in python which can be easily integrated within your script</li>
+</ul>
+<p>Who This Video is For</p>
+<p>Ethical hackers and penetration testers, Students preparing for OSCP, OSCE, GPEN, GXPN, CEH, Information security professionals and cyber security consultants, System and network security administrators, Programmers who want to get their hands dirty</p>
+</blockquote>
+<blockquote>
+<h4 id="django-2-web-development-cookbook"><a class="header-anchor" href="#django-2-web-development-cookbook">¶</a>Django 2 Web Development Cookbook</h4>
+<p><img src="https://hb.imgix.net/42327cd8d675ab3302468845fda4ed7e1818e250.png?auto=format&amp;w=180&amp;s=2634045a3e11c7215ce54a5fb5daab2b" alt=""></p>
+<p>Key Features</p>
+<ul>
+<li>Discover solutions to a variety of web application scenarios, leveraging the power of the Django framework</li>
+<li>Understand URL routing, models, forms, templates, and RESTful services with Django 2.14</li>
+<li>Test, deploy, and scale your web applications efficiently with Amazon Web Services</li>
+</ul>
+<p>Who This Book is For</p>
+<p>This book is designed for Python developers working on fast and secure web apps that can scale over time. You’ll also find this book useful if you want to upgrade to latest Django framework. A background in Python 3 along with basic knowledge of the Django framework will be useful.</p>
+</blockquote>
+<p><a href="https://steamcn.com/t454299-1-1" target="_blank" rel="noopener">python-packt-2019-books</a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HumbleBundle/" rel="tag"># HumbleBundle</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/18/Python Packt 2019/" rel="next" title="Python Packt 2019">
+                <i class="fa fa-chevron-left"></i> Python Packt 2019
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/20/Hexo 配置/" rel="prev" title="Hexo 安装">
+                Hexo 安装 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Lvoicc">
+            
+              <p class="site-author-name" itemprop="name">Lvoicc</p>
+              <p class="site-description motion-element" itemprop="description">Lvoicc's Blog</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lvoicc" title="GitHub &rarr; https://github.com/lvoicc" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:lvoicc@outlook.com" title="E-Mail &rarr; mailto:lvoicc@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/yourname" title="Weibo &rarr; https://weibo.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/Lvoico" title="Twitter &rarr; https://twitter.com/Lvoico" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">¶1$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#python-interviews"><span class="nav-number">1.1.</span> <span class="nav-text">¶Python Interviews</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#opencv-3-computer-vision-with-python-cookbook"><span class="nav-number">1.2.</span> <span class="nav-text">¶OpenCV 3 Computer Vision with Python Cookbook</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#learn-python-3-from-scratch-video"><span class="nav-number">1.3.</span> <span class="nav-text">¶Learn Python 3 from Scratch (Video)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mastering-flask-web-development"><span class="nav-number">1.4.</span> <span class="nav-text">¶Mastering Flask Web Development</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#data-visualization-with-python-the-complete-guide-video"><span class="nav-number">1.5.</span> <span class="nav-text">¶Data Visualization with Python: The Complete Guide (Video)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8"><span class="nav-number">2.</span> <span class="nav-text">¶8$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#python-automation-cookbook"><span class="nav-number">2.1.</span> <span class="nav-text">¶Python Automation Cookbook</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-machine-learning-by-example"><span class="nav-number">2.2.</span> <span class="nav-text">¶Python Machine Learning By Example</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#qt5-python-gui-programming-cookbook"><span class="nav-number">2.3.</span> <span class="nav-text">¶Qt5 Python GUI Programming Cookbook</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-microservices-development"><span class="nav-number">2.4.</span> <span class="nav-text">¶Python Microservices Development</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hands-on-data-structures-and-algorithms-with-python"><span class="nav-number">2.5.</span> <span class="nav-text">¶Hands-On Data Structures and Algorithms with Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-high-performance-second-edition-second-edition"><span class="nav-number">2.6.</span> <span class="nav-text">¶Python High Performance, Second Edition (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#hands-on-software-engineering-with-python"><span class="nav-number">2.7.</span> <span class="nav-text">¶Hands-On Software Engineering with Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#rest-apis-with-flask-and-python-video"><span class="nav-number">2.8.</span> <span class="nav-text">¶REST APIs with Flask and Python (Video)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#django-2-by-example"><span class="nav-number">2.9.</span> <span class="nav-text">¶Django 2 by Example</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15"><span class="nav-number">3.</span> <span class="nav-text">¶15$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#data-analysis-with-pandas-and-python-video"><span class="nav-number">3.1.</span> <span class="nav-text">¶Data Analysis with Pandas and Python (Video)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#learn-python-by-building-a-blockchain-and-cryptocurrency-video"><span class="nav-number">3.2.</span> <span class="nav-text">¶Learn Python by Building a Blockchain and Cryptocurrency (Video)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-deep-learning-projects"><span class="nav-number">3.3.</span> <span class="nav-text">¶Python Deep Learning Projects</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-for-finance-investment-fundamentals-and-data-analytics-video"><span class="nav-number">3.4.</span> <span class="nav-text">¶Python for Finance: Investment Fundamentals and Data Analytics (Video)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#mastering-python-networking"><span class="nav-number">3.5.</span> <span class="nav-text">¶Mastering Python Networking</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#clean-code-in-python"><span class="nav-number">3.6.</span> <span class="nav-text">¶Clean Code in Python</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#modern-python-cookbook"><span class="nav-number">3.7.</span> <span class="nav-text">¶Modern Python Cookbook</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-3-object-oriented-programming"><span class="nav-number">3.8.</span> <span class="nav-text">¶Python 3 Object-Oriented Programming</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#raspberry-pi-3-cookbook-for-python-programmers"><span class="nav-number">3.9.</span> <span class="nav-text">¶Raspberry Pi 3 Cookbook for Python Programmers</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#python-for-offensive-pentest-a-complete-practical-course-video"><span class="nav-number">3.10.</span> <span class="nav-text">¶Python For Offensive PenTest: A Complete Practical Course(Video)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#django-2-web-development-cookbook"><span class="nav-number">3.11.</span> <span class="nav-text">¶Django 2 Web Development Cookbook</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lvoicc</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+  
+  <script id="dsq-count-scr" src="https://Lvoicc.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/01/19/Web design Development/";
+    this.page.identifier = "2019/01/19/Web design Development/";
+    this.page.title = 'Web design Development';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://Lvoicc.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
