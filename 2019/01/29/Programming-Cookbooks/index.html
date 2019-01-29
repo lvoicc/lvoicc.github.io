@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Date:2019-01-29  ¶Intro We’ve teamed up with O’Reilly for our newest bundle! Get ebooks like Scala Cookbook, Python Cookbook, SQL Cookbook, and Raspberry Pi Cookbook. Plus, your purchase will support">
+<meta name="keywords" content="HumbleBundle,Book">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Programming Cookbooks">
+<meta property="og:url" content="http://yoursite.com/2019/01/29/Programming-Cookbooks/index.html">
+<meta property="og:site_name" content="Lvoicc">
+<meta property="og:description" content="Date:2019-01-29  ¶Intro We’ve teamed up with O’Reilly for our newest bundle! Get ebooks like Scala Cookbook, Python Cookbook, SQL Cookbook, and Raspberry Pi Cookbook. Plus, your purchase will support">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://hb.imgix.net/7179bb4e3ba37b695f8f190bda7ee513dda3f5e1.png?auto=compress,format&h=170&w=1200&s=08fc6f34d6b5ce125032b65c3d62800f">
+<meta property="og:image" content="https://hb.imgix.net/9f95908c011c8537b03f8093d4b2266e34a520e9.png?auto=format&w=180&s=d58c319b687b61b4b1a2bdbc53822103">
+<meta property="og:image" content="https://hb.imgix.net/05c8efd605f8df41f1b18a8116c29dbb24f9024d.png?auto=format&w=180&s=af74dfa46f56332a3048ca816eb4abc3">
+<meta property="og:image" content="https://hb.imgix.net/c23402541f514df0f692c620c82bbdc41792f0fa.png?auto=format&w=180&s=46e1128378dd38c0b6828122452060a3">
+<meta property="og:image" content="https://hb.imgix.net/8d48876b7f6b8e23f97dbed9351d22d637d28c87.png?auto=format&w=180&s=a72c9a18e6f30f5ac3ed9ab290c98761">
+<meta property="og:image" content="https://hb.imgix.net/8603ce731f5e3eeb503e437ff95866fd67ddb273.png?auto=format&w=180&s=5d74b502853b77cdc9905db330c0f2d8">
+<meta property="og:image" content="https://hb.imgix.net/05dd0ed3a2ea6ce772c63e51d96f0e991073cd42.png?auto=format&w=180&s=80cccff9a926900ed2375dc846918154">
+<meta property="og:image" content="https://hb.imgix.net/9b3c45870f1797c68f2f934d3975673a0ea8e7db.png?auto=format&w=180&s=8403aa9b6d74adf36a55c1507d4d9a95">
+<meta property="og:image" content="https://hb.imgix.net/06b2b819b1b609bc2fb6127bac71a631528750f0.png?auto=format&w=180&s=53d5c568313f47c43a6550a184ae5a84">
+<meta property="og:image" content="https://hb.imgix.net/2ce24f1cffec4d08fb33b96b1df5c7a742073ca8.png?auto=format&w=180&s=f506de215e858d264c50f509aabbea5b">
+<meta property="og:image" content="https://hb.imgix.net/f264fe4a00f88e2b64ec93b0b22f7b4d686279d6.png?auto=format&w=180&s=a6a9ac759f0016a6f4dbdc735c6c7608">
+<meta property="og:image" content="https://hb.imgix.net/79cc308417628ceb6941271660e652b37796afa5.png?auto=format&w=180&s=dace0b36b9418d99d9c91bc97a5cbac3">
+<meta property="og:image" content="https://hb.imgix.net/01ace9383fdaa3d2fb585bb5f1fea8d10eb52595.png?auto=format&w=180&s=b74adeefa75862ca44145e459d83f94c">
+<meta property="og:image" content="https://hb.imgix.net/ca59ca06cff65c4e968bac3cff46fc40ad668869.png?auto=format&w=180&s=17392493c04d2eee0b4366c84c39082c">
+<meta property="og:image" content="https://hb.imgix.net/d62e14e5ef95c73e2bb912d54d80eb51f3bde545.png?auto=format&w=180&s=db4b2fbc9910e5dc5194dc56e8d20df7">
+<meta property="og:image" content="https://hb.imgix.net/c03c6b015192e393c498e6de49a37b15c728065d.png?auto=format&w=180&s=78d5971499a3e36aeffadfa9ffadba95">
+<meta property="og:updated_time" content="2019-01-29T10:27:12.869Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Programming Cookbooks">
+<meta name="twitter:description" content="Date:2019-01-29  ¶Intro We’ve teamed up with O’Reilly for our newest bundle! Get ebooks like Scala Cookbook, Python Cookbook, SQL Cookbook, and Raspberry Pi Cookbook. Plus, your purchase will support">
+<meta name="twitter:image" content="https://hb.imgix.net/7179bb4e3ba37b695f8f190bda7ee513dda3f5e1.png?auto=compress,format&h=170&w=1200&s=08fc6f34d6b5ce125032b65c3d62800f">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2019/01/29/Programming-Cookbooks/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Programming Cookbooks | Lvoicc</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lvoicc</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学海无涯</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/29/Programming-Cookbooks/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lvoicc">
+      <meta itemprop="description" content="Lvoicc's Blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lvoicc">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Programming Cookbooks
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-29 18:02:27 / 修改时间：18:27:12" itemprop="dateCreated datePublished" datetime="2019-01-29T18:02:27+08:00">2019-01-29</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Humble-Book-Bundle/" itemprop="url" rel="index"><span itemprop="name">Humble Book Bundle</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <a href="/2019/01/29/Programming-Cookbooks/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/29/Programming-Cookbooks/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><code>Date:2019-01-29</code></p>
+<p><img src="https://hb.imgix.net/7179bb4e3ba37b695f8f190bda7ee513dda3f5e1.png?auto=compress,format&amp;h=170&amp;w=1200&amp;s=08fc6f34d6b5ce125032b65c3d62800f" alt=""></p>
+<h3 id="intro"><a class="header-anchor" href="#intro">¶</a>Intro</h3>
+<p>We’ve teamed up with O’Reilly for our newest bundle! Get ebooks like <em>Scala Cookbook, Python Cookbook, SQL Cookbook,</em> and <em>Raspberry Pi Cookbook</em>. Plus, your purchase will support Code for America and a charity of your choice!</p>
+<table>
+<thead>
+<tr>
+<th>$1+</th>
+<th>$8+</th>
+<th>$15+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a01">Windows PowerShell Cookbook</a></td>
+<td><a href="#b01">SQL Cookbook</a></td>
+<td><a href="#c01">Scala Cookbook</a></td>
+</tr>
+<tr>
+<td><a href="#a02">Regular Expressions Cookbook</a></td>
+<td><a href="#b02">JavaScript Cookbook</a></td>
+<td><a href="#c02">CSS Cookbook</a></td>
+</tr>
+<tr>
+<td><a href="#a03">Perl Cookbook</a></td>
+<td><a href="#b03">Arduino Cookbook</a></td>
+<td><a href="#c03">Python Cookbook</a></td>
+</tr>
+<tr>
+<td><a href="#a04">PHP Cookbook</a></td>
+<td><a href="#b04">Raspberry Pi Cookbook</a></td>
+<td><a href="#c04">Docker Cookbook</a></td>
+</tr>
+<tr>
+<td><a href="#a05">Android Cookbook</a></td>
+<td><a href="#b05">bash Cookbook</a></td>
+<td><a href="#c05">R Cookbook</a></td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<hr>
+<h3 id="1"><a class="header-anchor" href="#1">¶</a>1$+</h3>
+<blockquote>
+<h4 id="span-id-a01-windows-powershell-cookbook-third-edition"><a class="header-anchor" href="#span-id-a01-windows-powershell-cookbook-third-edition">¶</a><span id="a01">Windows PowerShell Cookbook (Third Edition)</span></h4>
+<p><img src="https://hb.imgix.net/9f95908c011c8537b03f8093d4b2266e34a520e9.png?auto=format&amp;w=180&amp;s=d58c319b687b61b4b1a2bdbc53822103" alt=""></p>
+<p>How do you use Windows PowerShell to navigate the filesystem, manage files and folders, or retrieve a web page? This introduction to the PowerShell language and scripting environment provides more than 400 task-oriented recipes to help you solve all kinds of problems. Intermediate to advanced system administrators will find more than 100 tried-and-tested scripts they can copy and use immediately.</p>
+<p>Updated for PowerShell 3.0, this comprehensive cookbook includes hands-on recipes for common tasks and administrative jobs that you can apply whether you’re on the client or server version of Windows. You also get quick references to technologies used in conjunction with PowerShell, including format specifiers and frequently referenced registry keys to selected .NET, COM, and WMI classes.</p>
+<ul>
+<li>Learn how to use PowerShell on Windows 8 and Windows Server 2012</li>
+<li>Tour PowerShell’s core features, including the command model, object-based pipeline, and ubiquitous scripting</li>
+<li>Master fundamentals such as the interactive shell, pipeline, and object concepts</li>
+<li>Perform common tasks that involve working with files, Internet-connected scripts, user interaction, and more</li>
+<li>Solve tasks in systems and enterprise management, such as working with Active Directory and the filesystem</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a02-regular-expressions-cookbook-second-edition"><a class="header-anchor" href="#span-id-a02-regular-expressions-cookbook-second-edition">¶</a><span id="a02">Regular Expressions Cookbook (Second Edition)</span></h4>
+<p><img src="https://hb.imgix.net/05c8efd605f8df41f1b18a8116c29dbb24f9024d.png?auto=format&amp;w=180&amp;s=af74dfa46f56332a3048ca816eb4abc3" alt=""></p>
+<p>Take the guesswork out of using regular expressions. With more than 140 practical recipes, this cookbook provides everything you need to solve a wide range of real-world problems. Novices will learn basic skills and tools, and programmers and experienced users will find a wealth of detail. Each recipe provides samples you can use right away.</p>
+<p>This revised edition covers the regular expression flavors used by C#, Java, JavaScript, Perl, PHP, Python, Ruby, and <a href="http://VB.NET" target="_blank" rel="noopener">VB.NET</a>. You’ll learn powerful new tricks, avoid flavor-specific gotchas, and save valuable time with this huge library of practical solutions.</p>
+<ul>
+<li>Learn regular expressions basics through a detailed tutorial</li>
+<li>Use code listings to implement regular expressions with your language of choice</li>
+<li>Understand how regular expressions differ from language to language</li>
+<li>Handle common user input with recipes for validation and formatting</li>
+<li>Find and manipulate words, special characters, and lines of text</li>
+<li>Detect integers, floating-point numbers, and other numerical formats</li>
+<li>Parse source code and process log files</li>
+<li>Use regular expressions in URLs, paths, and IP addresses</li>
+<li>Manipulate HTML, XML, and data exchange formats</li>
+<li>Discover little-known regular expression tricks and techniques</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a03-perl-cookbook-second-edition"><a class="header-anchor" href="#span-id-a03-perl-cookbook-second-edition">¶</a><span id="a03">Perl Cookbook (Second Edition)</span></h4>
+<p><img src="https://hb.imgix.net/c23402541f514df0f692c620c82bbdc41792f0fa.png?auto=format&amp;w=180&amp;s=46e1128378dd38c0b6828122452060a3" alt=""></p>
+<p>Find a Perl programmer, and you’ll find a copy of Perl Cookbook nearby. Perl Cookbook is a comprehensive collection of problems, solutions, and practical examples for anyone programming in Perl.  The book contains hundreds of rigorously reviewed Perl “recipes” and thousands of examples ranging from brief one-liners to complete applications.</p>
+<p>The second edition of Perl Cookbook has been fully updated for Perl 5.8, with extensive changes for Unicode support, I/O layers, mod_perl, and new technologies that have emerged since the previous edition of the book. Recipes have been updated to include the latest modules. New recipes have been added to every chapter of the book, and some chapters have almost doubled in size.</p>
+<p>Covered topic areas include:</p>
+<ul>
+<li>Manipulating strings, numbers, dates, arrays, and hashes</li>
+<li>Pattern matching and text substitutions</li>
+<li>References, data structures, objects, and classes</li>
+<li>Signals and exceptions</li>
+<li>Screen addressing, menus, and graphical applications</li>
+<li>Managing other processes</li>
+<li>Writing secure scripts</li>
+<li>Client-server programming</li>
+<li>Internet applications programming with mail, news, ftp, and telnet</li>
+<li>CGI and mod_perl programming</li>
+<li>Web programming</li>
+</ul>
+<p>Since its first release in 1998,</p>
+<p>Perl Cookbook has earned its place in the libraries of serious Perl users of all levels of expertise by providing practical answers, code examples, and mini-tutorials addressing the challenges that programmers face.  Now the second edition of this bestselling book is ready to earn its place among the ranks of favorite Perl books as well.</p>
+<p>Whether you’re a novice or veteran Perl programmer, you’ll find Perl Cookbook, 2nd Edition to be one of the most useful books on Perl available. Its comfortable discussion style and accurate attention to detail cover just about any topic you’d want to know about.  You can get by without having this book in your library, but once you’ve tried a few of the recipes, you won’t want to.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a04-php-cookbook-third-edition"><a class="header-anchor" href="#span-id-a04-php-cookbook-third-edition">¶</a><span id="a04">PHP Cookbook (Third Edition)</span></h4>
+<p><img src="https://hb.imgix.net/8d48876b7f6b8e23f97dbed9351d22d637d28c87.png?auto=format&amp;w=180&amp;s=a72c9a18e6f30f5ac3ed9ab290c98761" alt=""></p>
+<p>Want to understand a certain PHP programming technique? Or learn how to accomplish a particular task? This cookbook is the first place to look. With more than 350 code-rich recipes revised for PHP 5.4 and 5.5, this third edition provides updated solutions for generating dynamic web content—everything from using basic data types to querying databases, and from calling RESTful APIs to testing and securing your site.</p>
+<p>Each recipe includes code solutions that you can freely use, along with a discussion of how and why they work. Whether you’re an experienced PHP programmer or coming to PHP from another language, this book is an ideal on-the-job resource.</p>
+<p>You’ll find recipes to help you with:</p>
+<ul>
+<li>Basic data types: strings, numbers, arrays, and dates and times</li>
+<li>Program building blocks: variables, functions, classes, and objects</li>
+<li>Web programming: cookies, forms, sessions, and authentication</li>
+<li>Database access using PDO, SQLite, and other extensions</li>
+<li>RESTful API clients and servers, including HTTP, XML, and OAuth</li>
+<li>Key concepts: email, regular expressions, and graphics creation</li>
+<li>Designing robust applications: security and encryption, error handling, debugging and testing, and performance tuning</li>
+<li>Files, directories, and PHP’s Command Line Interface</li>
+<li>Libraries and package managers such as Composer and PECL</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-a05-android-cookbook-second-edition"><a class="header-anchor" href="#span-id-a05-android-cookbook-second-edition">¶</a><span id="a05">Android Cookbook (Second Edition)</span></h4>
+<p><img src="https://hb.imgix.net/8603ce731f5e3eeb503e437ff95866fd67ddb273.png?auto=format&amp;w=180&amp;s=5d74b502853b77cdc9905db330c0f2d8" alt=""></p>
+<p>Jump in and build working Android apps with the help of more than 230 tested recipes. The second edition of this acclaimed cookbook includes recipes for working with user interfaces, multitouch gestures, location awareness, web services, and specific device features such as the phone, camera, and accelerometer. You also get useful info on packaging your app for the Google Play Market.</p>
+<p>Ideal for developers familiar with Java, Android basics, and the Java SE API, this book features recipes contributed by more than three dozen Android developers. Each recipe provides a clear solution and sample code you can use in your project right away. Among numerous topics, this cookbook helps you:</p>
+<ul>
+<li>Get started with the tooling you need for developing and testing Android apps</li>
+<li>Create layouts with Android’s UI controls, graphical services, and pop-up mechanisms</li>
+<li>Build location-aware services on Google Maps and OpenStreetMap</li>
+<li>Control aspects of Android’s music, video, and other multimedia capabilities</li>
+<li>Work with accelerometers and other Android sensors</li>
+<li>Use various gaming and animation frameworks</li>
+<li>Store and retrieve persistent data in files and embedded databases</li>
+<li>Access RESTful web services with JSON and other formats</li>
+<li>Test and troubleshoot individual components and your entire application</li>
+</ul>
+</blockquote>
+<h3 id="8"><a class="header-anchor" href="#8">¶</a>8$+</h3>
+<blockquote>
+<h4 id="span-id-b01-sql-cookbook"><a class="header-anchor" href="#span-id-b01-sql-cookbook">¶</a><span id="b01">SQL Cookbook</span></h4>
+<p><img src="https://hb.imgix.net/05dd0ed3a2ea6ce772c63e51d96f0e991073cd42.png?auto=format&amp;w=180&amp;s=80cccff9a926900ed2375dc846918154" alt=""></p>
+<p>You know the rudiments of the SQL query language, yet you feel you aren’t taking full advantage of SQL’s expressive power. You’d like to learn how to do more work with SQL inside the database before pushing data across the network to your applications. You’d like to take your SQL skills to the next level.</p>
+<p>Let’s face it, SQL is a deceptively simple language to learn, and many database developers never go far beyond the simple statement: SELECT columns FROM table WHERE conditions.  But there is so much more you can do with the language.  In the SQL Cookbook, experienced SQL developer Anthony Molinaro shares his favorite SQL techniques and features. You’ll learn about:</p>
+<ul>
+<li>Window functions, arguably the most significant enhancement to SQL in the past decade. If you’re not using these, you’re missing out</li>
+<li>Powerful, database-specific features such as SQL Server’s PIVOT and UNPIVOT operators, Oracle’s MODEL clause, and PostgreSQL’s very useful GENERATE_SERIES function</li>
+<li>Pivoting rows into columns, reverse-pivoting columns into rows, using pivoting to facilitate inter-row calculations, and double-pivoting a result set</li>
+<li><em>Bucketization</em>, and why you should never use that term in Brooklyn.</li>
+<li>How to create histograms, summarize data into buckets, perform aggregations over a moving range of values, generate running-totals and subtotals, and other advanced, data warehousing techniques</li>
+<li>The technique of <em>walking a string</em>, which allows you to use SQL to parse through the characters, words, or delimited elements of a string</li>
+</ul>
+<p>Written in O’Reilly’s popular Problem/Solution/Discussion style, the SQL Cookbook is sure to please. Anthony’s credo is: “When it comes down to it, we all go to work, we all have bills to pay, and we all want to go home at a reasonable time and enjoy what’s still available of our days.” The SQL Cookbook moves quickly from problem to solution, saving you time each step of the way.</p>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b02-javascript-cookbook-second-edition"><a class="header-anchor" href="#span-id-b02-javascript-cookbook-second-edition">¶</a><span id="b02">JavaScript Cookbook (Second Edition)</span></h4>
+<p><img src="https://hb.imgix.net/9b3c45870f1797c68f2f934d3975673a0ea8e7db.png?auto=format&amp;w=180&amp;s=8403aa9b6d74adf36a55c1507d4d9a95" alt=""></p>
+<p>Problem solving with JavaScript is a lot trickier now that its use has expanded considerably in size, scope, and complexity. This cookbook has your back, with recipes for common tasks across the JavaScript world, whether you’re working in the browser, the server, or a mobile environment. Each recipe includes reusable code and practical advice for tackling JavaScript objects, Node, Ajax, JSON, data persistence, graphical and media applications, complex frameworks, modular JavaScript, APIs, and many related technologies.</p>
+<p>Aimed at people who have some experience with JavaScript, the first part covers traditional uses of JavaScript, along with new ideas and improved functionality. The second part dives into the server, mobile development, and a plethora of leading-edge tools. You’ll save time—and learn more about JavaScript in the process.</p>
+<p>Topics include:</p>
+<p>Classic JavaScript:</p>
+<ul>
+<li>Arrays, functions, and the JavaScript Object</li>
+<li>Accessing the user interface</li>
+<li>Testing and accessibility</li>
+<li>Creating and using JavaScript libraries</li>
+<li>Client-server communication with Ajax</li>
+<li>Rich, interactive web effects</li>
+</ul>
+<p>JavaScript, All Blown Up:</p>
+<ul>
+<li>New ECMAScript standard objects</li>
+<li>Using Node on the server</li>
+<li>Modularizing and managing JavaScript</li>
+<li>Complex JavaScript frameworks</li>
+<li>Advanced client-server communications</li>
+<li>Visualizations and client-server graphics</li>
+<li>Mobile application development</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b03-arduino-cookbook-second-edition"><a class="header-anchor" href="#span-id-b03-arduino-cookbook-second-edition">¶</a><span id="b03">Arduino Cookbook (Second Edition)</span></h4>
+<p><img src="https://hb.imgix.net/06b2b819b1b609bc2fb6127bac71a631528750f0.png?auto=format&amp;w=180&amp;s=53d5c568313f47c43a6550a184ae5a84" alt=""></p>
+<p>Want to create devices that interact with the physical world? This cookbook is perfect for anyone who wants to experiment with the popular Arduino microcontroller and programming environment. You’ll find more than 200 tips and techniques for building a variety of objects and prototypes such as toys, detectors, robots, and interactive clothing that can sense and respond to touch, sound, position, heat, and light.</p>
+<p>You don’t need to have mastered Arduino or programming to get started. Updated for the Arduino 1.0 release, the recipes in this second edition include practical examples and guidance to help you begin, expand, and enhance your projects right away—whether you’re an artist, designer, hobbyist, student, or engineer.</p>
+<ul>
+<li>Get up to speed on the Arduino board and essential software concepts quickly</li>
+<li>Learn basic techniques for reading digital and analog signals</li>
+<li>Use Arduino with a variety of popular input devices and sensors</li>
+<li>Drive visual displays, generate sound, and control several types of motors</li>
+<li>Interact with devices that use remote controls, including TVs and appliances</li>
+<li>Learn techniques for handling time delays and time measurement</li>
+<li>Apply advanced coding and memory handling techniques</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b04-raspberry-pi-cookbook-second-edition"><a class="header-anchor" href="#span-id-b04-raspberry-pi-cookbook-second-edition">¶</a><span id="b04">Raspberry Pi Cookbook (Second Edition)</span></h4>
+<p><img src="https://hb.imgix.net/2ce24f1cffec4d08fb33b96b1df5c7a742073ca8.png?auto=format&amp;w=180&amp;s=f506de215e858d264c50f509aabbea5b" alt=""></p>
+<p>With millions of new users and several new models, the Raspberry Pi ecosystem continues to expand—along with a lot of new questions about the Pi’s capabilities. The second edition of this popular cookbook provides more than 240 hands-on recipes for running this tiny low-cost computer with Linux, programming it with Python, and hooking up sensors, motors, and other hardware—including Arduino and the Internet of Things.</p>
+<p>Prolific hacker and author Simon Monk also teaches basic principles to help you use new technologies with Raspberry Pi as its ecosystem continues to develop. This cookbook is ideal for programmers and hobbyists familiar with the Pi through resources, including</p>
+<p>Getting Started with Raspberry Pi</p>
+<p>(O’Reilly). Python and other code examples from the book are available on GitHub.</p>
+<ul>
+<li>Set up your Raspberry Pi and connect to a network</li>
+<li>Work with its Linux-based operating system</li>
+<li>Program Raspberry Pi with Python</li>
+<li>Give your Pi “eyes” with computer vision</li>
+<li>Control hardware through the GPIO connector</li>
+<li>Use Raspberry Pi to run different types of motors</li>
+<li>Work with switches, keypads, and other digital inputs</li>
+<li>Use sensors to measure temperature, light, and distance</li>
+<li>Connect to IoT devices in various ways</li>
+<li>Create dynamic projects with Arduino</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-b05-bash-cookbook-second-edition"><a class="header-anchor" href="#span-id-b05-bash-cookbook-second-edition">¶</a><span id="b05">bash Cookbook (Second Edition)</span></h4>
+<p><img src="https://hb.imgix.net/f264fe4a00f88e2b64ec93b0b22f7b4d686279d6.png?auto=format&amp;w=180&amp;s=a6a9ac759f0016a6f4dbdc735c6c7608" alt=""></p>
+<p>For system administrators, programmers, and end users, shell command or carefully crafted shell script can save you time and effort, or facilitate consistency and repeatability for a variety of common tasks. This cookbook provides more than 300 practical recipes for using</p>
+<p>bash</p>
+<p>, the popular Unix shell that enables you to harness and customize the power of any Unix or Linux system.</p>
+<p>Ideal for new and experienced users alike—including proficient Windows users and sysadmins—this updated second edition helps you solve a wide range of problems. You’ll learn ways to handle input/output, file manipulation, program execution, administrative tasks, and many other challenges. Each recipe includes one or more scripting examples and a discussion of why the solution works.</p>
+<p>You’ll find recipes for problems including:</p>
+<ul>
+<li>Standard output and input, and executing commands</li>
+<li>Shell variables, shell logic, and arithmetic</li>
+<li>Intermediate shell tools and advanced scripting</li>
+<li>Searching for files with <em>find</em>, <em>locate</em>, and <em>slocate</em></li>
+<li>Working with dates and times</li>
+<li>Creating shell scripts for various end-user tasks</li>
+<li>Working with tasks that require parsing</li>
+<li>Writing secure shell scripts</li>
+<li>Configuring and customizing <em>bash</em></li>
+</ul>
+</blockquote>
+<h3 id="15"><a class="header-anchor" href="#15">¶</a>15$+</h3>
+<blockquote>
+<h4 id="span-id-c01-scala-cookbook"><a class="header-anchor" href="#span-id-c01-scala-cookbook">¶</a><span id="c01">Scala Cookbook</span></h4>
+<p><img src="https://hb.imgix.net/79cc308417628ceb6941271660e652b37796afa5.png?auto=format&amp;w=180&amp;s=dace0b36b9418d99d9c91bc97a5cbac3" alt=""></p>
+<p>Save time and trouble when using Scala to build object-oriented, functional, and concurrent applications. With more than 250 ready-to-use recipes and 700 code examples, this comprehensive cookbook covers the most common problems you’ll encounter when using the Scala language, libraries, and tools. It’s ideal not only for experienced Scala developers, but also for programmers learning to use this JVM language.</p>
+<p>Author Alvin Alexander (creator of <a href="http://DevDaily.com" target="_blank" rel="noopener">DevDaily.com</a>) provides solutions based on his experience using Scala for highly scalable, component-based applications that support concurrency and distribution. Packed with real-world scenarios, this book provides recipes for:</p>
+<ul>
+<li>Strings, numeric types, and control structures</li>
+<li>Classes, methods, objects, traits, and packaging</li>
+<li>Functional programming in a variety of situations</li>
+<li>Collections covering Scala’s wealth of classes and methods</li>
+<li>Concurrency, using the Akka Actors library</li>
+<li>Using the Scala REPL and the Simple Build Tool (SBT)</li>
+<li>Web services on both the client and server sides</li>
+<li>Interacting with SQL and NoSQL databases</li>
+<li>Best practices in Scala development</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c02-css-cookbook-third-edition"><a class="header-anchor" href="#span-id-c02-css-cookbook-third-edition">¶</a><span id="c02">CSS Cookbook (Third Edition)</span></h4>
+<p><img src="https://hb.imgix.net/01ace9383fdaa3d2fb585bb5f1fea8d10eb52595.png?auto=format&amp;w=180&amp;s=b74adeefa75862ca44145e459d83f94c" alt=""></p>
+<p>Learn how to solve thereal problems you face with CSS. This cookbook offers hundreds of practical examples for using CSS to format your web pages, and includes code samples you can use right away. You’ll find exactly what you need, from the basics to complex hacks and workarounds.</p>
+<p>Each recipe explains how to customize a solution to meet your needs, and each chapter features a sample design that showcases the topics discussed. You’ll learn about the behavior of the latest browsers-including IE 8, Firefox 3, Safari 4, and Google Chrome—and how you can resolve differences in the ways they display your web pages. Arranged in a convenient format for quick reference, this third edition is a valuable companion for anyone working with CSS.</p>
+<ul>
+<li>Learn the basics, such as the CSS rule structure</li>
+<li>Work with web typography and page layout</li>
+<li>Create effects for images and other page elements</li>
+<li>Learn techniques for configuring lists, forms, and tables</li>
+<li>Design effective web navigation and create custom links</li>
+<li>Get creative by combining CSS with JavaScript</li>
+<li>Learn useful troubleshooting techniques</li>
+<li>Explore features of HTML5 and CSS3</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c03-python-cookbook-third-edition"><a class="header-anchor" href="#span-id-c03-python-cookbook-third-edition">¶</a><span id="c03">Python Cookbook (Third Edition)</span></h4>
+<p><img src="https://hb.imgix.net/ca59ca06cff65c4e968bac3cff46fc40ad668869.png?auto=format&amp;w=180&amp;s=17392493c04d2eee0b4366c84c39082c" alt=""></p>
+<p>If you need help writing programs in Python 3, or want to update older Python 2 code, this book is just the ticket. Packed with practical recipes written and tested with Python 3.3, this unique cookbook is for experienced Python programmers who want to focus on modern tools and idioms.</p>
+<p>Inside, you’ll find complete recipes for more than a dozen topics, covering the core Python language as well as tasks common to a wide variety of application domains. Each recipe contains code samples you can use in your projects right away, along with a discussion about how and why the solution works.</p>
+<p>Topics include:</p>
+<ul>
+<li>Data Structures and Algorithms</li>
+<li>Strings and Text</li>
+<li>Numbers, Dates, and Times</li>
+<li>Iterators and Generators</li>
+<li>Files and I/O</li>
+<li>Data Encoding and Processing</li>
+<li>Functions</li>
+<li>Classes and Objects</li>
+<li>Metaprogramming</li>
+<li>Modules and Packages</li>
+<li>Network and Web Programming</li>
+<li>Concurrency</li>
+<li>Utility Scripting and System Administration</li>
+<li>Testing, Debugging, and Exceptions</li>
+<li>C Extensions</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c04-docker-cookbook"><a class="header-anchor" href="#span-id-c04-docker-cookbook">¶</a><span id="c04">Docker Cookbook</span></h4>
+<p><img src="https://hb.imgix.net/d62e14e5ef95c73e2bb912d54d80eb51f3bde545.png?auto=format&amp;w=180&amp;s=db4b2fbc9910e5dc5194dc56e8d20df7" alt=""></p>
+<p>Whether you’re deploying applications on premise or in the cloud, this cookbook provides developers, operators, and IT professionals with more than 130 proven recipes for working with Docker.</p>
+<p>With these practical solutions, experienced developers with no previous knowledge of Docker will be able to package and deploy distributed applications within a couple of chapters. IT professionals will be able to solve everyday problems, as well as create, run, share, and deploy Docker images. Operators will quickly be able to adopt the tools that will change the way they work.</p>
+<p>The recipes in this book will help you:</p>
+<ul>
+<li>Manage containers, mount data volumes, and link containers</li>
+<li>Create and share container images</li>
+<li>Network containers across single or multiple hosts</li>
+<li>Tackle advanced topics such as Docker configuration and development</li>
+<li>Deploy multi-container applications on a distributed cluster with Kubernetes</li>
+<li>Use a new generation of operating systems optimized for Docker</li>
+<li>Learn tools for application deployment, continuous integration, service discovery, and orchestration</li>
+<li>Access a Docker host on Amazon AWS, Google GCE, and Microsoft Azure</li>
+<li>Monitor containers and explore different application use cases</li>
+</ul>
+</blockquote>
+<blockquote>
+<h4 id="span-id-c05-r-cookbook"><a class="header-anchor" href="#span-id-c05-r-cookbook">¶</a><span id="c05">R Cookbook</span></h4>
+<p><img src="https://hb.imgix.net/c03c6b015192e393c498e6de49a37b15c728065d.png?auto=format&amp;w=180&amp;s=78d5971499a3e36aeffadfa9ffadba95" alt=""></p>
+<p>With more than 200 practical recipes, this book helps you perform data analysis with R quickly and efficiently. The R language provides everything you need to do statistical work, but its structure can be difficult to master. This collection of concise, task-oriented recipes makes you productive with R immediately, with solutions ranging from basic tasks to input and output, general statistics, graphics, and linear regression.</p>
+<p>Each recipe addresses a specific problem, with a discussion that explains the solution and offers insight into how it works. If you’re a beginner,</p>
+<p>R Cookbook</p>
+<p>will help get you started. If you’re an experienced data programmer, it will jog your memory and expand your horizons. You’ll get the job done faster and learn more about R in the process.</p>
+<ul>
+<li>Create vectors, handle variables, and perform other basic functions</li>
+<li>Input and output data</li>
+<li>Tackle data structures such as matrices, lists, factors, and data frames</li>
+<li>Work with probability, probability distributions, and random variables</li>
+<li>Calculate statistics and confidence intervals, and perform statistical tests</li>
+<li>Create a variety of graphic displays</li>
+<li>Build statistical models with linear regressions and analysis of variance (ANOVA)</li>
+<li>Explore advanced statistical techniques, such as finding clusters in your data</li>
+</ul>
+<p>&quot;Wonderfully readable,</p>
+<p>R Cookbook</p>
+<p>serves not only as a solutions manual of sorts, but as a truly enjoyable way to explore the R language—one practical example at a time.&quot;—Jeffrey Ryan, software consultant and R package author</p>
+</blockquote>
+<p>QUOTE:<a href="https://steamcn.com/t461409-1-1" target="_blank" rel="noopener"><strong>PROGRAMMING COOKBOOKS BY O’REILLY</strong></a></p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HumbleBundle/" rel="tag"># HumbleBundle</a>
+          
+            <a href="/tags/Book/" rel="tag"># Book</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/27/RubyMine-2018-3-Crack/" rel="next" title="RubyMine 2018.3 Crack">
+                <i class="fa fa-chevron-left"></i> RubyMine 2018.3 Crack
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Lvoicc">
+            
+              <p class="site-author-name" itemprop="name">Lvoicc</p>
+              <p class="site-description motion-element" itemprop="description">Lvoicc's Blog</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lvoicc" title="GitHub &rarr; https://github.com/lvoicc" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:lvoicc@outlook.com" title="E-Mail &rarr; mailto:lvoicc@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/yourname" title="Weibo &rarr; https://weibo.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/Lvoico" title="Twitter &rarr; https://twitter.com/Lvoico" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#intro"><span class="nav-number">1.</span> <span class="nav-text">¶Intro</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">2.</span> <span class="nav-text">¶1$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a01-windows-powershell-cookbook-third-edition"><span class="nav-number">2.1.</span> <span class="nav-text">¶Windows PowerShell Cookbook (Third Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a02-regular-expressions-cookbook-second-edition"><span class="nav-number">2.2.</span> <span class="nav-text">¶Regular Expressions Cookbook (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a03-perl-cookbook-second-edition"><span class="nav-number">2.3.</span> <span class="nav-text">¶Perl Cookbook (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a04-php-cookbook-third-edition"><span class="nav-number">2.4.</span> <span class="nav-text">¶PHP Cookbook (Third Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-a05-android-cookbook-second-edition"><span class="nav-number">2.5.</span> <span class="nav-text">¶Android Cookbook (Second Edition)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8"><span class="nav-number">3.</span> <span class="nav-text">¶8$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b01-sql-cookbook"><span class="nav-number">3.1.</span> <span class="nav-text">¶SQL Cookbook</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b02-javascript-cookbook-second-edition"><span class="nav-number">3.2.</span> <span class="nav-text">¶JavaScript Cookbook (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b03-arduino-cookbook-second-edition"><span class="nav-number">3.3.</span> <span class="nav-text">¶Arduino Cookbook (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b04-raspberry-pi-cookbook-second-edition"><span class="nav-number">3.4.</span> <span class="nav-text">¶Raspberry Pi Cookbook (Second Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-b05-bash-cookbook-second-edition"><span class="nav-number">3.5.</span> <span class="nav-text">¶bash Cookbook (Second Edition)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15"><span class="nav-number">4.</span> <span class="nav-text">¶15$+</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c01-scala-cookbook"><span class="nav-number">4.1.</span> <span class="nav-text">¶Scala Cookbook</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c02-css-cookbook-third-edition"><span class="nav-number">4.2.</span> <span class="nav-text">¶CSS Cookbook (Third Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c03-python-cookbook-third-edition"><span class="nav-number">4.3.</span> <span class="nav-text">¶Python Cookbook (Third Edition)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c04-docker-cookbook"><span class="nav-number">4.4.</span> <span class="nav-text">¶Docker Cookbook</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#span-id-c05-r-cookbook"><span class="nav-number">4.5.</span> <span class="nav-text">¶R Cookbook</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lvoicc</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+  
+  <script id="dsq-count-scr" src="https://Lvoicc.disqus.com/count.js" async></script>
+
+
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://yoursite.com/2019/01/29/Programming-Cookbooks/";
+    this.page.identifier = "2019/01/29/Programming-Cookbooks/";
+    this.page.title = 'Programming Cookbooks';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://Lvoicc.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
