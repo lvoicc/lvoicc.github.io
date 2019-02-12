@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.ico?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.ico?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="Book Bundle Intro Issue:2019-02-11     ROBOTICS &amp; IOT BY PACKT  We&apos;ve teamed up with Packt for our newest bundle! Get ebooks like Learn Raspberry Pi, Hands-On IoT Solutions with Blockchain, Internet">
+<meta name="keywords" content="HumbleBundle,Book">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Robotics &amp; IoT by Packt">
+<meta property="og:url" content="https://lvoicc.club/2019/02/12/Robotics-IoT-by-Packt/index.html">
+<meta property="og:site_name" content="Lvoicc">
+<meta property="og:description" content="Book Bundle Intro Issue:2019-02-11     ROBOTICS &amp; IOT BY PACKT  We&apos;ve teamed up with Packt for our newest bundle! Get ebooks like Learn Raspberry Pi, Hands-On IoT Solutions with Blockchain, Internet">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://hb.imgix.net/8878b7999a19b2e74be1ea633d4abf288eb3f026.png?auto=compress,format&h=170&w=1200&s=9b80e4e2b21c98f64fded0a55b2399fe">
+<meta property="og:image" content="https://hb.imgix.net/0ad247344b2dde17a62cfb84d01fef3371653074.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=4061b5f2a014b76ec62cdcb14096a4cf">
+<meta property="og:image" content="https://hb.imgix.net/a76fba979fec7a2c45c9bfd49a5b7a32c4f799b0.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=d88bf2947d11f9e15cc25102bee1e74a">
+<meta property="og:image" content="https://hb.imgix.net/371b28e1be4a6fd1fdb97cf5881eb00a9588a37c.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=339c18a4f2a4c1eff2f7f432f1bb5a49">
+<meta property="og:image" content="https://hb.imgix.net/6672c8285673088eb1873664dc8217a114e6c22a.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=a2c8a40e7d8a3af2f347eb389df68592">
+<meta property="og:image" content="https://hb.imgix.net/975e674f0d5b819d5129f2e7473882f87046f0f1.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=519d61b26d8d875e8ec863219e608eea">
+<meta property="og:image" content="https://hb.imgix.net/ed5ed7d979dd95df38087d4db7e0a9fb19f0c1ae.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=f7f90f3477c7c42e05d12b3faa122cf3">
+<meta property="og:image" content="https://hb.imgix.net/e5abfb42f871b8201e77d700bef3600d7df96fdc.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=9a295edd1c735eb99c9718543e81308c">
+<meta property="og:image" content="https://hb.imgix.net/000e986d21738fe9d3ad1d159d82c4e1b082ea95.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=349809e37f216bdeacb20fe2e99cdf87">
+<meta property="og:image" content="https://hb.imgix.net/9ddf754d353ab014489bdad67aec56c482511675.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=8b74005e41638370314d951c08c22e83">
+<meta property="og:image" content="https://hb.imgix.net/1736c2321981bd9eab40ae76560bcc4fada57cd5.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=21fa60efe08bf3d3005bfccc525524db">
+<meta property="og:image" content="https://hb.imgix.net/e6a55c910872771ef223155735c9d36de1bb10d3.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=c6870f96e7972377bac59219aaa92496">
+<meta property="og:image" content="https://hb.imgix.net/a7af72fc69dd9c0bb88eeb1ce8dee680e53cc16c.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=914e1273eb2c60fc08dc210a2e4030c5">
+<meta property="og:image" content="https://hb.imgix.net/58f59f16c6fee51f6462841991be26222aec5479.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=be3af3b46a7a53e383691f45126a5baf">
+<meta property="og:image" content="https://hb.imgix.net/53c9b0804e516521d02fbe5f42d0881310dab58d.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=24a62510688c6766d82d941b685c0431">
+<meta property="og:image" content="https://hb.imgix.net/613c65fa71218fae47c70a16f8f4afca914602c6.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=88ba6551cfc44496208ba48276087102">
+<meta property="og:image" content="https://hb.imgix.net/9fc15572fb2d6ffb77819a85897a2f1ecc394b49.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=f2d0d0a86d742c565c850ed082511ac1">
+<meta property="og:image" content="https://hb.imgix.net/49cd10d23e42c1c5836806a4e2d17a5fdf1f45a3.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=da8b6bbb15ad9e300f944470ca4c1391">
+<meta property="og:image" content="https://hb.imgix.net/e066b671e5b6649d40c2cd465de1c1ecb75e18ab.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=ad0566d427a4a0c65639c1785f3ed998">
+<meta property="og:image" content="https://hb.imgix.net/6fe765e90c5eb3cd3083c34e3bc578a6fb0a111c.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=d4b84395f2e5710460baeafd23be93ad">
+<meta property="og:image" content="https://hb.imgix.net/5ce45ed67edcc67918f2391edbd6f9ee7793267b.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=198af16b4e57bba50b700aa3c82608cd">
+<meta property="og:image" content="https://hb.imgix.net/77423fe30a543b80989f2dead89968f852fcf566.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=f19a805bf0ecdbd341cbf1f2ba62d0dd">
+<meta property="og:image" content="https://hb.imgix.net/c36207a5e56f5ba609e14e166a57ad98b64c820b.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=5ec027d1ee36eaddd297e7a42c2b7089">
+<meta property="og:image" content="https://hb.imgix.net/dc4cebedaf87bd60ee6e173a5f0a44bb46806658.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=c2bb42113e2506fd52fcca05f8a1af31">
+<meta property="og:image" content="https://hb.imgix.net/42ca5dbe436b20954053cba5e1b7ed3f774e5eb1.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=b24b2bc2e7228590f31a02a439ee7a80">
+<meta property="og:image" content="https://hb.imgix.net/132db969a398f9c54493da586267ef4d6323dc8c.png?auto=compress,format&dpr=2&fit=clip&h=218&w=150&s=ca5ca37264715eb311b354c4c44a1877">
+<meta property="og:updated_time" content="2019-02-12T04:49:11.487Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Robotics &amp; IoT by Packt">
+<meta name="twitter:description" content="Book Bundle Intro Issue:2019-02-11     ROBOTICS &amp; IOT BY PACKT  We&apos;ve teamed up with Packt for our newest bundle! Get ebooks like Learn Raspberry Pi, Hands-On IoT Solutions with Blockchain, Internet">
+<meta name="twitter:image" content="https://hb.imgix.net/8878b7999a19b2e74be1ea633d4abf288eb3f026.png?auto=compress,format&h=170&w=1200&s=9b80e4e2b21c98f64fded0a55b2399fe">
+
+
+
+
+
+
+  <link rel="canonical" href="https://lvoicc.club/2019/02/12/Robotics-IoT-by-Packt/">
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Robotics & IoT by Packt | Lvoicc</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lvoicc</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">学海无涯</p>
+      
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-about">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i> <br>关于</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-schedule">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/schedule/" rel="section"><i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>日程表</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://lvoicc.club/2019/02/12/Robotics-IoT-by-Packt/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lvoicc">
+      <meta itemprop="description" content="Lvoicc's Blog">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lvoicc">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Robotics & IoT by Packt
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-02-12 11:20:52 / 修改时间：12:49:11" itemprop="dateCreated datePublished" datetime="2019-02-12T11:20:52+08:00">2019-02-12</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Humble-Book-Bundle/" itemprop="url" rel="index"><span itemprop="name">Humble Book Bundle</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <a href="/2019/02/12/Robotics-IoT-by-Packt/#comments" itemprop="discussionUrl">
+                  <span class="post-meta-item-text">评论数：</span> <span class="post-comments-count valine-comment-count" data-xid="/2019/02/12/Robotics-IoT-by-Packt/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <table>
+<tr>
+<th width="30%" style="text-align:center">Book Bundle Intro</th>
+<th style="text-align:center">Issue:2019-02-11</th>
+</tr>
+<tr>
+<td style="background-color:#dddddd">
+<img src="https://hb.imgix.net/8878b7999a19b2e74be1ea633d4abf288eb3f026.png?auto=compress,format&h=170&w=1200&s=9b80e4e2b21c98f64fded0a55b2399fe" style="margin-bottom:0px;border:0px"></td>
+<td><a href="https://www.humblebundle.com/books/robotics-iot-books" target="_blank" rel="noopener">ROBOTICS & IOT BY PACKT</a>
+<br><br>
+We've teamed up with Packt for our newest bundle! Get ebooks like Learn Raspberry Pi, Hands-On IoT Solutions with Blockchain, Internet of Things with Python and Raspberry Pi, Python Robotics Projects, ROS Robotics Projects, and Internet of Things for Architects. Plus, your purchase will support a charity of your choice!
+</td>
+</tr>
+</table>
+<table>
+<thead>
+<tr>
+<th>$1+</th>
+<th>$8+</th>
+<th>$15+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#a01">Building Smart LEGO MINDSTORMS EV3 Robots</a></td>
+<td><a href="#b01">Introduction to Internet of Things</a></td>
+<td><a href="#c01">Hands-On IoT Solutions with Blockchain</a></td>
+</tr>
+<tr>
+<td><a href="#a02">Learning Robotics using Python</a></td>
+<td><a href="#b02">Raspberry Pi 3 Cookbook for Python Programmers</a></td>
+<td><a href="#c02">Artificial Intelligence for Robotics</a></td>
+</tr>
+<tr>
+<td><a href="#a03">MQTT Essentials - A Lightweight IoT Protocol</a></td>
+<td><a href="#b03">The Internet of Things Using Augmented Reality in Unity IoTAR</a></td>
+<td><a href="#c03">Internet of Things for Architects</a></td>
+</tr>
+<tr>
+<td><a href="#a04">Internet of Things Programming Projects</a></td>
+<td><a href="#b04">Mastering IoT with Arduino</a></td>
+<td><a href="#c04">Mastering Arduino</a></td>
+</tr>
+<tr>
+<td><a href="#a05">Learn Raspberry Pi</a></td>
+<td><a href="#b05">Hands-On Chatbots and Conversational UI Development</a></td>
+<td><a href="#c05">Embedded Linux Development Using Yocto Project Cookbook</a></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#b06">Mastering Internet of Things</a></td>
+<td><a href="#c06">ESP8266 Home Automation Projects</a></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#b07">Python Robotics Projects</a></td>
+<td><a href="#c07">Fundamentals of IoT Security</a></td>
+</tr>
+<tr>
+<td></td>
+<td><a href="#b08">Mastering ROS for Robotics Programming</a></td>
+<td><a href="#c08">Practical Internet of Things with JavaScript</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#c09">Build and Program Smart LEGO MINDSTORMS EV3 Robot</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#c10">Internet of Things with Python and Raspberry Pi</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#c11">Learn Robotics Programming</a></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><a href="#c12">ROS Robotics Projects</a></td>
+</tr>
+</tbody>
+</table>
+<a id="more"></a>
+<hr>
+<h3 id="1"><a class="header-anchor" href="#1">¶</a>1$+</h3>
+<span id="a01">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Building Smart LEGO MINDSTORMS EV3 Robots</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/0ad247344b2dde17a62cfb84d01fef3371653074.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=4061b5f2a014b76ec62cdcb14096a4cf" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/buildingsmartlegomindstormsev3robots_preview.pdf?ttl=1550028234&t=7c48cf8e386ac0892bce1330de0e8a5e" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+    <ul>
+    <li>Efficiently build smart robots with the LEGO MINDSTORMS EV3</li>
+    <li>Discover building techniques and programming concepts that are used by engineers to prototype robots in the real world</li>
+    <li>This project-based guide will teach you how to build exciting projects such as the objecta-tracking tank, ultimate all-terrain vehicle, remote control race car, or even a GPS-navigating autonomous vehicle</li>      
+    </ul>     
+Who This Book is For
+    <br>
+This book is for hobbyists, robotic engineers, and programmers who understand the basics of the EV3 programming language and are familiar with building with LEGO Technic and want to try some advanced projects. If you want to learn some new engineering techniques and take your experience with the EV3 to the next level, then this book is for you. 
+      </td>
+  </tr>
+</table>
+<span id="a02">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Learning Robotics using Python</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/a76fba979fec7a2c45c9bfd49a5b7a32c4f799b0.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=d88bf2947d11f9e15cc25102bee1e74a" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/learningroboticsusingpython_preview.pdf?ttl=1550028234&t=83461d267ce932191c23081a0f3ddca9" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+        <ul>
+        <li>Design, simulate, build, and program an interactive autonomous mobile robot</li>
+        <li>Leverage the power of ROS, Gazebo, and Python to enhance your robotic skills</li> 
+        <li>A hands-on guide to creating an autonomous mobile robot with the help of ROS and Python</li>
+        </ul>
+Who This Book is For 
+<br>
+This book is for those who are conducting research in mobile robotics and autonomous navigation. As well as the robotics research domain, this book is also for the robot hobbyist community. You’re expected to have a basic understanding of Linux commands and Python.   
+    </td>
+  </tr>
+</table>
+<span id="a03">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">MQTT Essentials - A Lightweight IoT Protocol</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/371b28e1be4a6fd1fdb97cf5881eb00a9588a37c.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=339c18a4f2a4c1eff2f7f432f1bb5a49" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/mqttessentials_preview.pdf?ttl=1550028234&t=d770cdae8f7fd08a6e401aceadcdf8a1" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Make your connected devices less prone to attackers by understanding practical security mechanisms</li>
+<li>Dive deep into one of IoT’s extremely lightweight machines to enable connectivity protocol with some real-world examples</li>
+<li>Learn to take advantage of the features included in MQTT for IoT and Machine-to-Machine communications with complete real-life examples</li>   
+</ul>
+Who This Book is For
+<br>
+This book is a great resource for developers who want to learn more about the MQTT protocol to apply it to their individual IoT projects. Prior knowledge of working with IoT devices is essential.      
+      </td>
+  </tr>
+</table>
+<span id="a04">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Internet of Things Programming Projects</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/6672c8285673088eb1873664dc8217a114e6c22a.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=a2c8a40e7d8a3af2f347eb389df68592" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/internetofthingsprogrammingprojects_preview.pdf?ttl=1550028234&t=0c1f031c1fb1356f813c7d604712e7e4" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+<b>Key Features</b>
+<ul>
+<li>Leverage the full potential of IoT with the combination of Raspberry Pi 3 and Python</li>
+<li>Build complex Python-based applications with IoT</li>
+<li>Work on various IoT projects and understand the basics of electronics</li>    
+</ul>
+<b>Who This Book is For</b>
+<br>
+Internet of Things Programming Projects is for Python developers and programmers who are interested in building their own IoT applications and IoT-based projects. It is also targeted at IoT programmers and developers who are looking to build exciting projects with Python.
+</td>
+  </tr>
+</table>
+<span id="a05">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Learn Raspberry Pi</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/975e674f0d5b819d5129f2e7473882f87046f0f1.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=519d61b26d8d875e8ec863219e608eea" style="margin-bottom:0px;border:0px">
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>A comprehensive but fast and friendly guide to get you started with the Raspberry Pi.</li>
+<li>Explore the latest version of the Raspberry Pi with fully up-to-date techniques and code examples.</li>    
+<li>Build real-life projects using the Raspberry Pi</li>    
+</ul>
+Who This Video is For
+<br>
+This course is aimed at Python programmers who are interested in understanding the Raspberry Pi and building real-world projects.
+      </td>
+  </tr>
+</table>
+<h3 id="8"><a class="header-anchor" href="#8">¶</a>8$+</h3>
+<span id="b01">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Introduction to Internet of Things</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/ed5ed7d979dd95df38087d4db7e0a9fb19f0c1ae.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=f7f90f3477c7c42e05d12b3faa122cf3" style="margin-bottom:0px;border:0px">
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>A comprehensive and friendly guide to understanding how to the Internet of Things works.</li>
+<li>Covers Internet of Things with fully up-to-date techniques, code examples, and used cases.</li>
+<li>A practical tutorial designed for anyone in understanding IoT.</li>   
+</ul>
+Who This Video is For
+<br>
+This course is for anyone who is curious wants to explore how he/she can learn IoT and profit from the IoT megatrend. You could be an entrepreneur, engineer, student, hobbyist or a corporate employee. By the end of the course, you will understand how to build your own IoT Solution.
+      </td>
+  </tr>
+</table>
+<span id="b02">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Raspberry Pi 3 Cookbook for Python Programmers</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/e5abfb42f871b8201e77d700bef3600d7df96fdc.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=9a295edd1c735eb99c9718543e81308c" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/raspberrypi3cookbookforpythonprogrammers_preview.pdf?ttl=1550028234&t=e7d13889d46c512378971835fe08c22a" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Leverage the power of Raspberry Pi 3 using Python programming</li>
+<li>Create 3D games, build neural network modules, and interface with your own circuits</li>
+<li>Packed with clear, step-by-step recipes to walk you through the capabilities of Raspberry Pi</li>
+</ul>
+Who This Book is For
+<br>
+This book is for anyone who wants to master the skills of Python programming using Raspberry Pi 3. Prior knowledge of Python will be an added advantage.
+    </td>
+  </tr>
+</table>
+<span id="b03">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">The Internet of Things Using Augmented Reality in Unity IoTAR</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/000e986d21738fe9d3ad1d159d82c4e1b082ea95.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=349809e37f216bdeacb20fe2e99cdf87" style="margin-bottom:0px;border:0px">
+    </td>
+    <td colspan="2" ;="">
+Key Features 
+<ul>
+Applications of Internet of Things and augmented reality IoTAR:
+<li>AR business cards, Gaming, and Entertainment</li>
+<li>Medical, Military, Industrial, and Domestic maintenance</li>
+<li>Navigation, Advertising and Promotional content</li>    
+</ul>
+Who This Video is For
+<br>
+This course is for those who want to learn augmented reality. This course is not for people who are not willing to practice along. You won't learn by watching but rather by implementing the labs provided in this course. Beginners in augmented reality or mixed reality. This course is implemented in Unity on Windows; Android or iOS deployment is not part of the scope of this course. However, you can easily find tutorials on how to export your AR app to mobile operating systems
+      </td>
+  </tr>
+</table>
+<span id="b04">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Mastering IoT with Arduino</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/9ddf754d353ab014489bdad67aec56c482511675.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=8b74005e41638370314d951c08c22e83" style="margin-bottom:0px;border:0px">
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>A comprehensive and friendly guide to understanding how the Internet of Things works with the Arduino</li>
+<li>Covers the Arduino with fully up-to-date techniques, code examples, and use cases</li>
+<li>A practical tutorial designed to let you master IoT with the Arduino using practical examples</li>
+</ul>
+Who This Video is For
+<br>
+One Stop course for developer or electronics engineer who need to understand how IoT works. Basic knowledge of IoT is required. By the end of the course, you will understand how to build your own IoT Solution using Arduino.
+   </td>
+  </tr>
+</table>
+<span id="b05">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Hands-On Chatbots and Conversational UI Development</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/1736c2321981bd9eab40ae76560bcc4fada57cd5.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=21fa60efe08bf3d3005bfccc525524db" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/hands-onchatbotsandconversationaluidevelopment_preview.pdf?ttl=1550028234&t=e2b5ef5410fbf6a2da770e38db1d578e" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Understand the different use cases of Conversational UIs with this project-based guide</li>
+<li>Build feature-rich Chatbots and deploy them on multiple platforms</li>
+<li>Get real-world examples of voice-enabled UIs for personal and home assistance</li>
+</ul>
+Who This Book is For
+<br>
+This book is for developers who are interested in creating interactive conversational UIs/Chatbots. A basic understanding of JavaScript and web APIs is required.
+      </td>
+  </tr>
+</table>
+<span id="b06">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Mastering Internet of Things</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/e6a55c910872771ef223155735c9d36de1bb10d3.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=c6870f96e7972377bac59219aaa92496" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/masteringinternetofthings_preview.pdf?ttl=1550028234&t=a10edc22ee1dd90d5d968547548e62d0" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Design and implement state-of-the-art solutions for the Internet of Things</li>
+<li>Build complex projects using motions detectors, controllers, sensors, and Raspberry Pi 3</li>
+<li>A hands-on guide that provides interoperable solutions for sensors, actuators, and controllers</li>
+</ul>
+Who This Book is For
+<br>
+If you're a developer or electronic engineer and are curious about the Internet of Things, this is the book for you. With only a rudimentary understanding of electronics and Raspberry Pi 3, and some programming experience using managed code, such as C# or Java, you will be taught to develop state-of-the-art solutions for the Internet of Things.
+      </td>
+  </tr>
+</table>
+<span id="b07">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Python Robotics Projects</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/a7af72fc69dd9c0bb88eeb1ce8dee680e53cc16c.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=914e1273eb2c60fc08dc210a2e4030c5" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/pythonroboticsprojects_preview.pdf?ttl=1550028234&t=f69473ab6ac1d42cc8fa68c9e0b2e533" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Design, build, and stimulate collaborative robots</li>
+<li>Build high-end robotics projects such as a customized personal Jarvis</li>
+<li>Leverage the power of Python and ROS for DIY robotic projects</li>
+</ul>
+Who This Book is For
+<br>
+If building robots is your dream, then this book is made for you. Prior knowledge of Python would be an added advantage.      
+      </td>
+  </tr>
+</table>
+<span id="b08">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Mastering ROS for Robotics Programming</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/58f59f16c6fee51f6462841991be26222aec5479.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=be3af3b46a7a53e383691f45126a5baf" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/masteringrosforroboticsprogramming_preview.pdf?ttl=1550028234&t=0396649dda0eead14bbf886cd0dcb812" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Develop complex robotic applications using ROS to interface robot manipulators and mobile robots</li>
+<li>Gain insight into autonomous navigation in mobile robots and motion planning in robot manipulators</li>
+<li>Discover best practices and troubleshooting solutions</li>
+</ul>
+Who This Book is For
+<br>
+If you are a robotics enthusiast or researcher who want to learn more about building robot applications using ROS, this book is for you. In order to learn from this book, you should have a basic knowledge of ROS, GNU/Linux, and C++ programming concepts. The book is also excellent for programmers who want to explore the advanced features of ROS.
+      </td>
+  </tr>
+</table>
+<h3 id="15"><a class="header-anchor" href="#15">¶</a>15$+</h3>
+<span id="c01">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Hands-On IoT Solutions with Blockchain</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/53c9b0804e516521d02fbe5f42d0881310dab58d.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=24a62510688c6766d82d941b685c0431" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/hands-oniotsolutionswithblockchain_preview.pdf?ttl=1550028234&t=d6181dc7f7d06264803a60b9ed3e9010" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Explore practical implementation of ledger technology in the IoT architecture</li>
+<li>Study security best practices for your smart devices</li>
+<li>Understand Blockchain implementation for end-to-end IoT solutions</li>
+</ul>
+Who This Book is For
+<br>
+Hands-On IoT Solutions with Blockchain is for you if you are an Internet of Things (IoT) analyst, architect, engineer, or any stakeholder responsible for security mechanisms on an IoT infrastructure. This book is also for IT professionals who want to start developing solutions using Blockchain and IoT on the IBM Cloud platform. Basic understanding of IoT will assist you in understanding key concepts covered in the book.
+      </td>
+  </tr>
+</table>
+<span id="c02">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Artificial Intelligence for Robotics</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/613c65fa71218fae47c70a16f8f4afca914602c6.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=88ba6551cfc44496208ba48276087102" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/artificialintelligenceforrobotics_preview.pdf?ttl=1550028234&t=0ec3e0e7a07407a56d4ca825a0eb2433" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Leverage fundamentals of AI and robotics</li>
+<li>Work through use cases to implement various machine learning algorithms</li>
+<li>Explore Natural Language Processing (NLP) concepts for efficient decision making in robots</li>
+</ul>
+Who This Book is For
+<br>
+If you have basic knowledge about robotics and want to build or enhance your existing robot’s intelligence, then Artificial Intelligence for Robotics is for you. This book is also for enthusiasts who want to gain knowledge of AI and robotics.
+    </td>
+  </tr>
+</table>
+<span id="c03">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Internet of Things for Architects</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/9fc15572fb2d6ffb77819a85897a2f1ecc394b49.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=f2d0d0a86d742c565c850ed082511ac1" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/internetofthingsforarchitects_preview.pdf?ttl=1550028234&t=dac9bc995370909a44cebb75b061e98e" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Build a complete IoT system that is the best fit for your organization</li>
+<li>Learn about different concepts, technologies, and tradeoffs in the IoT architectural stack</li>
+<li>Understand the theory, concepts, and implementation of each element that comprises IoT design—from sensors to the cloud</li>
+<li>Implement best practices to ensure the reliability, scalability, robust communication systems, security, and data analysis in your IoT infrastructure</li>
+</ul>
+Who This Book is For
+<br>
+This book is for architects, system designers, technologists, and technology managers who want to understand the IoT ecosphere, various technologies, and tradeoffs and develop a 50,000-foot view of IoT architecture.
+      </td>
+  </tr>
+</table>
+<span id="c04">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Mastering Arduino</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/49cd10d23e42c1c5836806a4e2d17a5fdf1f45a3.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=da8b6bbb15ad9e300f944470ca4c1391" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/masteringarduino_preview.pdf?ttl=1550028234&t=2001b3b90f7023e39f2a1885c3005a58" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Covers enough electronics and code for users at any level</li>
+<li>Includes complete circuit diagrams for all projects</li>
+<li>Final robot project combines knowledge from all the chapters</li>
+</ul>
+Who This Book is For
+<br>
+Mastering Arduino is for anybody who wants to experiment with an Arduino board and build simple projects. No prior knowledge is required, as the fundamentals of electronics and coding are covered in this book as well as advance projects.
+      </td>
+  </tr>
+</table>
+<span id="c05">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Embedded Linux Development Using Yocto Project Cookbook</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/e066b671e5b6649d40c2cd465de1c1ecb75e18ab.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=ad0566d427a4a0c65639c1785f3ed998" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/embeddedlinuxdevelopmentusingyoctoprojectcookbook_preview.pdf?ttl=1550028234&t=4fd74c7e41649a951956bd5093b17d38" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Optimize your Yocto setup to speed up development and debug build issues</li>
+<li>Use what is quickly becoming the standard embedded Linux product builder framework—the Yocto Project</li>
+<li>Recipe-based implementation of best practices to optimize your Linux system</li>
+</ul>
+Who This Book is For
+<br>
+If you are an embedded Linux developer with the basic knowledge of Yocto Project, this book is an ideal way to broaden your knowledge with recipes for embedded development.
+      </td>
+  </tr>
+</table>
+<span id="c06">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">ESP8266 Home Automation Projects</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/6fe765e90c5eb3cd3083c34e3bc578a6fb0a111c.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=d4b84395f2e5710460baeafd23be93ad" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/esp8266homeautomationprojects_preview.pdf?ttl=1550028234&t=8144d4c9222722cb94ac8f042c265f5b" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Harness the power of the ESP8266 Wi-Fi chip to build an effective Home Automation System</li>
+<li>Learn about the various ESP8266 modules</li>
+<li>Configuring the ESP8266 and making interesting home automation projects</li>
+<li>A step-by-step guide on the ESP8266 chip and how to convert your home into a smart home</li>
+</ul>
+Who This Book is For
+<br>
+This book is targeted at people who want to build connected and inexpensive home automation projects using the ESP8266 Wi-Fi chip, and to completely automate their homes. A basic understanding of the board would be an added advantage.
+      </td>
+  </tr>
+</table>
+<span id="c07">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Fundamentals of IoT Security</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/5ce45ed67edcc67918f2391edbd6f9ee7793267b.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=198af16b4e57bba50b700aa3c82608cd" style="margin-bottom:0px;border:0px">
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Deep dives on threats faced by innovative IoT systems</li>
+<li>This course will be filled with practical examples learn the techniques and methodologies of building and securing the robust Internet of Things (IoT) systems</li>
+<li>Step by step guide to IoT threat modeling</li>
+</ul>
+Who This Video is For
+<br>
+This course is for IOT product managers, software and systems engineering managers that need an understanding of the fundamentals of IoT security. This course is also good for IT security professionals that want to better understand the unique characteristics and challenges of IoT system security.
+      </td>
+  </tr>
+</table>
+<span id="c08">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Practical Internet of Things with JavaScript</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/77423fe30a543b80989f2dead89968f852fcf566.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=f19a805bf0ecdbd341cbf1f2ba62d0dd" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/practicalinternetofthingswithjavascript_preview.pdf?ttl=1550028234&t=5adaf0fc62b37f87b943d9ac4fde7fe0" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Leverage the capability of IoT with the combination of Raspberry Pi 3 and JavaScript (ES5/ES6)</li>
+<li>Develop a health monitoring device along with some cool projects like Smart Agriculture & Raspberry Pi 3 based surveillance</li>
+<li>A practical book which will help you build Mobile/Web/Desktop apps that will show how to manage and monitor data from sensors and actuators in real time</li>
+</ul>
+Who This Book is For
+<br>
+This book targets IoT enthusiasts and web developers who would like to build IoT-based applications with Raspberry Pi, Arduino and JavaScript. Some knowledge about electronics and familiarity with programming concepts (JavaScript - ES5/ES6) is expected.
+      </td>
+  </tr>
+</table>
+<span id="c09">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Build and Program Smart LEGO MINDSTORMS EV3 Robot</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/c36207a5e56f5ba609e14e166a57ad98b64c820b.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=5ec027d1ee36eaddd297e7a42c2b7089" style="margin-bottom:0px;border:0px">
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Build and control your own robots beyond the capabilities provided with the LEGO EV3 kit</li>
+<li>You'll become familiar with resources for your EV3 kit and enhance your robot designs</li>
+<li>A practical guide that includes your EV3 kit, combine core programming commands, and implement tested design principles when building your own robot</li>
+</ul>
+Who This Video is For
+<br>
+This course is for beginners who are robotics enthusiasts, teachers, students, and robotic school coaches. No previous knowledge about robotics and programming is needed.
+      </td>
+  </tr>
+</table>
+<span id="c10">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Internet of Things with Python and Raspberry Pi</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/dc4cebedaf87bd60ee6e173a5f0a44bb46806658.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=c2bb42113e2506fd52fcca05f8a1af31" style="margin-bottom:0px;border:0px">
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Build reliable, secure, hack-proof, and scalable IoT projects with Python and Raspberry Pi</li>
+<li>A problem-based approach (in the development phase) to solving every possible challenge that IoT projects can have</li>
+<li>Integrate your projects with sensors and actuators to connect with Raspberry Pi and communicate with IoT servers</li>
+</ul>
+Who This Video is For
+<br>
+This course is for IoT enthusiasts and budding developers looking to enhance their skills in developing smart projects using Python and JavaScript with the Raspberry Pi board. A basic knowledge of electronics and programming syntax is required. If you are keen to enhance your Python knowledge and develop real-world IoT projects, then look no further!
+      </td>
+  </tr>
+</table>
+<span id="c11">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">Learn Robotics Programming</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/42ca5dbe436b20954053cba5e1b7ed3f774e5eb1.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=b24b2bc2e7228590f31a02a439ee7a80" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/learnroboticsprogramming_preview.pdf?ttl=1550028234&t=8afa6c585c7d6fcea4d57174a139ffe1" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Get up and running with the fundamentals of robotic programming</li>
+<li>Program a robot using Python and the Raspberry Pi 3</li>
+<li>Learn to build a smart robot with interactive and AI-enabled behaviors</li>
+</ul>
+Who This Book is For
+<br>
+Learn Robotics Programming is for programmers, developers, and enthusiasts interested in robotics and developing a fully functional robot. No major experience required just some programming knowledge would be sufficient.
+      </td>
+  </tr>
+</table>
+<span id="c12">
+<table>
+  <tr>
+    <th colspan="2" style="text-align:center">ROS Robotics Projects</th>
+  </tr>
+  <tr>
+    <td width="25%" style="text-align:center">
+      <img src="https://hb.imgix.net/132db969a398f9c54493da586267ef4d6323dc8c.png?auto=compress,format&amp;dpr=2&amp;fit=clip&amp;h=218&amp;w=150&amp;s=ca5ca37264715eb311b354c4c44a1877" style="margin-bottom:0px;border:0px">
+      <a href="https://dl.humble.com/ops/pdfs/rosroboticsprojects_preview.pdf?ttl=1550028234&t=b6062fe65c042104644edd39f3eabcbb" target="_blank" rel="noopener">Preview</a>
+    </td>
+    <td colspan="2" ;="">
+Key Features
+<ul>
+<li>Create and program cool robotic projects using powerful ROS libraries</li>
+<li>Work through concrete examples that will help you build your own robotic systems of varying complexity levels</li>
+<li>This book provides relevant and fun-filled examples so you can make your own robots that can run and work</li>
+</ul>
+Who This Book is For
+<br>
+This book is for robotic enthusiasts and researchers who would like to build robot applications using ROS. If you are looking to explore advanced ROS features in your projects, then this book is for you. Basic knowledge of ROS, GNU/Linux, and programming concepts is assumed.
+      </td>
+  </tr>
+</table>
+</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/HumbleBundle/" rel="tag"># HumbleBundle</a>
+          
+            <a href="/tags/Book/" rel="tag"># Book</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/05/Break-Into-The-Game-Industry/" rel="next" title="Break Into The Game Industry">
+                <i class="fa fa-chevron-left"></i> Break Into The Game Industry
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="Lvoicc">
+            
+              <p class="site-author-name" itemprop="name">Lvoicc</p>
+              <p class="site-description motion-element" itemprop="description">Lvoicc's Blog</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">14</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/lvoicc" title="GitHub &rarr; https://github.com/lvoicc" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:lvoicc@outlook.com" title="E-Mail &rarr; mailto:lvoicc@outlook.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://weibo.com/yourname" title="Weibo &rarr; https://weibo.com/yourname" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://twitter.com/Lvoico" title="Twitter &rarr; https://twitter.com/Lvoico" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                </span>
+              
+            </div>
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1"><span class="nav-number">1.</span> <span class="nav-text">¶1$+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8"><span class="nav-number">2.</span> <span class="nav-text">¶8$+</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#15"><span class="nav-number">3.</span> <span class="nav-text">¶15$+</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lvoicc</span>
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/affix.js?v=6.7.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+<script src="//cdn1.lncld.net/static/js/3.11.1/av-min.js"></script>
+
+
+
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+
+<script>
+  var GUEST = ['nick', 'mail', 'link'];
+  var guest = 'nick,mail,link';
+  guest = guest.split(',').filter(function(item) {
+    return GUEST.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#comments',
+    verify: true,
+    notify: true,
+    appId: '3N5qbLlEmm5fdwsfdOlNnQoy-gzGzoHsz',
+    appKey: 'u6wvfwFNVDBoOP1FH7JNqGrf',
+    placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+    avatar: 'mm',
+    meta: guest,
+    pageSize: '10' || 10,
+    visitor: false
+  });
+</script>
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
