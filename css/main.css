@@ -1898,7 +1898,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #0f406e;
+  background: #5c992e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3176,4 +3176,45 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+th {
+  text-align: center;
+}
+.posts-expand .post-body img {
+  border: none;
+  padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+  padding: 3px;
+}
+.back-to-top {
+  line-height: 1.5;
+  right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  background-color: rgba(247,149,51,0.75);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
+}
+.back-to-top.back-to-top-on {
+  bottom: 10px;
+}
+.aplayer {
+  font-family: Lato, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STHeiti, "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif !important;
+}
+.aplayer-withlrc.aplayer .aplayer-info {
+  background-color: #fff;
+}
+.aplayer .aplayer-list ol {
+  background-color: #fff;
+}
+.site-overview {
+  text-align: center;
+}
+#days {
+  color: #07b39b;
+  font-size: 13px;
+  margin-top: 10px;
 }

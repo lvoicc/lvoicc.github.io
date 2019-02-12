@@ -405,7 +405,7 @@
                 
               
 
-              <time title="创建时间：2019-02-12 11:20:52 / 修改时间：12:49:11" itemprop="dateCreated datePublished" datetime="2019-02-12T11:20:52+08:00">2019-02-12</time>
+              <time title="创建时间：2019-02-12 11:20:52 / 修改时间：14:48:15" itemprop="dateCreated datePublished" datetime="2019-02-12T11:20:52+08:00">2019-02-12</time>
             
 
             
@@ -477,12 +477,12 @@
         
           <table>
 <tr>
-<th width="30%" style="text-align:center">Book Bundle Intro</th>
-<th style="text-align:center">Issue:2019-02-11</th>
+<th width="30%">Book Bundle Intro</th>
+<th>Issue:2019-02-11</th>
 </tr>
 <tr>
 <td style="background-color:#dddddd">
-<img src="https://hb.imgix.net/8878b7999a19b2e74be1ea633d4abf288eb3f026.png?auto=compress,format&h=170&w=1200&s=9b80e4e2b21c98f64fded0a55b2399fe" style="margin-bottom:0px;border:0px"></td>
+<img src="https://jkry-imagehosting-1258472770.cos.ap-chengdu.myqcloud.com/Blog/img/hbb/Robotics-IoT-by-Packt/main/Robotics-IoT-by-Packt.png" style="margin-bottom:0px;border:0px"></td>
 <td><a href="https://www.humblebundle.com/books/robotics-iot-books" target="_blank" rel="noopener">ROBOTICS & IOT BY PACKT</a>
 <br><br>
 We've teamed up with Packt for our newest bundle! Get ebooks like Learn Raspberry Pi, Hands-On IoT Solutions with Blockchain, Internet of Things with Python and Raspberry Pi, Python Robotics Projects, ROS Robotics Projects, and Internet of Things for Architects. Plus, your purchase will support a charity of your choice!
@@ -2717,7 +2717,32 @@ We’ve teamed up with O’Reilly for our newest bundle! Get ebooks like Scala C
           
             
           
-          
+          <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("02/01/2019 00:00:00");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
 
         </div>
       </div>
